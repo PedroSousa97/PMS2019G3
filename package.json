@@ -1,0 +1,11 @@
+{
+    "name": "pms2019g3",
+    "version": "1.0.0",
+    "description": "This example is so cool.",
+    "main": "app.js",
+    "start": "node app.js",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "author": "g3"
+}
