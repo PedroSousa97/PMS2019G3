@@ -1,12 +1,19 @@
 
 const express = require('express');
 const path = require('path');
-const app = express(),
-    http = require('http').createServer(app).listen(process.env.PORT || 80);
+const app = express();
+
+
+
+const port = process.env.PORT || 3000;
 
 
 app.use(express.static('Public'));
+
 app.get('/', function(req, res){
     res.sendFile(__dirname + '\\Public\\index.html');
 })
 
+app.listen(port, function(){
+    console.log("Listening on "+port);
+})
