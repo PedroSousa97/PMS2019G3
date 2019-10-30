@@ -19,7 +19,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: .1rem;
-    background: rgb(216, 197, 0, 0.8)!important;
+    background: rgba(216, 197, 0, 0.8)!important;
 }
 
 .navbar-brand img{
