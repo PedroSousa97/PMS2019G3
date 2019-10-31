@@ -204,13 +204,6 @@ h2.heading{
 }
 
 /*------Flip cars------*/
-
-  .middle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
   .card{
     cursor: pointer;
     width: 21.25rem;
