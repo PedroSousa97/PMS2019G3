@@ -202,3 +202,76 @@ h2.heading{
     padding: 25rem 6rem 25rem;
     border-radius: 0;
 }
+
+/*------Flip cars------*/
+
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .card{
+    cursor: pointer;
+    width: 21.25rem;
+    height: 30rem;
+    background-color: rgba(0,0,0, 0);
+  }
+  .front,.back1,.back2{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .2s linear;
+  }
+  .front img{
+    height: 100%;
+  }
+  .front{
+    transform: perspective(37.5rem) rotateY(0deg);
+  }
+  .back1{
+    background-image: url(img/flipcards/bitmojipeter.png);
+    background-size: 21.25rem 30rem;
+    transform: perspective(37.5rem) rotateY(180deg);
+  }
+  .back2{
+    background-image: url(img/flipcards/bitmojinelson.png);
+    background-size: 21.25rem 30rem;
+    transform: perspective(37.5rem) rotateY(180deg);
+  }
+  .back-content{
+    color:white;
+    text-align: center;
+    padding-top: 20rem; 
+    width: 100%;
+  }
+  .sm{
+    margin: 1rem 0;
+  }
+  .sm a{
+    display: inline-flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.125rem;
+    transition: 0.4s;
+    border-radius: 50%
+  }
+  .sm a:hover{
+    background:#d8c500;
+    color: white;
+  }
+  .card:hover > .front{
+    transform: perspective(37.5rem) rotateY(-180deg);
+  }
+  .card:hover > .back1{
+    transform: perspective(37.5rem) rotateY(0deg);
+  }
+  .card:hover > .back2{
+    transform: perspective(37.5rem) rotateY(0deg);
+  }
+  
