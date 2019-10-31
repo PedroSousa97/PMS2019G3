@@ -208,7 +208,7 @@ h2.heading{
 
 
 /*------Flip cars------*/
-@media screen and (min-width: 1040px) {
+@media screen and (min-width: 1400px) {
   .card{
     margin:0 auto;
     cursor: pointer;
@@ -282,7 +282,7 @@ h2.heading{
     transform: perspective(37.5rem) rotateY(0deg);
   }
 }
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 900px) {
   .card{
     margin:0 auto;
     cursor: pointer;
@@ -358,7 +358,7 @@ h2.heading{
     transform: perspective(37.5rem) rotateY(0deg);
   }
 }
-@media screen and (max-width: 1040px) and (min-width:830px){
+@media screen and (max-width: 1400px) and (min-width:900px){
   .card{
     margin:0 auto;
     cursor: pointer;
