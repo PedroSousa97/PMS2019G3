@@ -216,7 +216,7 @@ h2.heading{
     height: 30rem;
     background-color: rgba(0,0,0, 0);
   }
-  .front,.back1,.back2{
+  .front,.back1,.back2,.back3,.back4,.back5{
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -240,6 +240,21 @@ h2.heading{
     background-size: 21.25rem 30rem;
     transform: perspective(37.5rem) rotateY(180deg);
   }
+  .back3{
+    background-image: url(img/flipcards/bitmojiluis.png);
+    background-size: 21.25rem 30rem;
+    transform: perspective(37.5rem) rotateY(180deg);
+  }
+  .back4{
+    background-image: url(img/flipcards/bitmojiduarte.png);
+    background-size: 21.25rem 30rem;
+    transform: perspective(37.5rem) rotateY(180deg);
+  }
+  .back5{
+    background-image: url(img/flipcards/bitmojicristo.png);
+    background-size: 21.25rem 30rem;
+    transform: perspective(37.5rem) rotateY(180deg);
+  }
   .back-content{
     color:white;
     text-align: center;
@@ -251,6 +266,23 @@ h2.heading{
 
   }
   h4.back-content1{
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h2.back-content2{
+    text-transform: uppercase;
+  }
+  h4.back-content2{
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h3.back-content1{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h3.back-content2{
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -281,6 +313,15 @@ h2.heading{
   .card:hover > .back2{
     transform: perspective(37.5rem) rotateY(0deg);
   }
+  .card:hover > .back3{
+    transform: perspective(37.5rem) rotateY(0deg);
+  }
+  .card:hover > .back4{
+    transform: perspective(37.5rem) rotateY(0deg);
+  }
+  .card:hover > .back5{
+    transform: perspective(37.5rem) rotateY(0deg);
+  }
 }
 @media screen and (max-width: 900px) {
   .card{
@@ -290,7 +331,7 @@ h2.heading{
     height: 13rem;
     background-color: rgba(0,0,0, 0);
   }
-  .front,.back1,.back2{
+  .front,.back1,.back2,.back3,.back4,.back5{
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -314,6 +355,21 @@ h2.heading{
     background-size: 8.625rem 13rem;
     transform: perspective(37.5rem) rotateY(180deg);
   }
+  .back3{
+    background-image: url(img/flipcards/bitmojiluis.png);
+    background-size: 8.625rem 13rem;
+    transform: perspective(37.5rem) rotateY(180deg);
+  }
+  .back4{
+    background-image: url(img/flipcards/bitmojiduarte.png);
+    background-size: 8.625rem 13rem;
+    transform: perspective(37.5rem) rotateY(180deg);
+  }
+  .back5{
+    background-image: url(img/flipcards/bitmojicristo.png);
+    background-size: 8.625rem 13rem;
+    transform: perspective(37.5rem) rotateY(180deg);
+  }
   .back-content{
     color:white;
     text-align: center;
@@ -321,12 +377,32 @@ h2.heading{
     width: 100%;
   }
   h2.back-content1{
-    font-size: 1rem;
+    font-size: .7rem;
     text-transform: uppercase;
 
   }
   h4.back-content1{
+    font-size: .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h2.back-content2{
     font-size: .7rem;
+    text-transform: uppercase;
+
+  }
+  h4.back-content2{
+    font-size: .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h3.back-content1{
+    font-size: .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h3.back-content2{
+    font-size: .5rem;
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -357,6 +433,15 @@ h2.heading{
   .card:hover > .back2{
     transform: perspective(37.5rem) rotateY(0deg);
   }
+  .card:hover > .back3{
+    transform: perspective(37.5rem) rotateY(0deg);
+  }
+  .card:hover > .back4{
+    transform: perspective(37.5rem) rotateY(0deg);
+  }
+  .card:hover > .back5{
+    transform: perspective(37.5rem) rotateY(0deg);
+  }
 }
 @media screen and (max-width: 1400px) and (min-width:900px){
   .card{
@@ -366,7 +451,7 @@ h2.heading{
     height: 17rem;
     background-color: rgba(0,0,0, 0);
   }
-  .front,.back1,.back2{
+  .front,.back1,.back2,.back3,.back4,.back5{
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -390,6 +475,21 @@ h2.heading{
     background-size: 12.625rem 17rem;
     transform: perspective(37.5rem) rotateY(180deg);
   }
+  .back3{
+    background-image: url(img/flipcards/bitmojiluis.png);
+    background-size: 12.625rem 17rem;
+    transform: perspective(37.5rem) rotateY(180deg);
+  }
+  .back4{
+    background-image: url(img/flipcards/bitmojiduarte.png);
+    background-size: 12.625rem 17rem;
+    transform: perspective(37.5rem) rotateY(180deg);
+  }
+  .back5{
+    background-image: url(img/flipcards/bitmojicristo.png);
+    background-size: 12.625rem 17rem;
+    transform: perspective(37.5rem) rotateY(180deg);
+  }
   .back-content{
     color:white;
     text-align: center;
@@ -397,12 +497,32 @@ h2.heading{
     width: 100%;
   }
   h2.back-content1{
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase;
 
   }
   h4.back-content1{
+    font-size: .7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h2.back-content2{
     font-size: 1rem;
+    text-transform: uppercase;
+
+  }
+  h4.back-content2{
+    font-size: .7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h3.back-content1{
+    font-size: .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h3.back-content2{
+    font-size: .5rem;
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -431,6 +551,15 @@ h2.heading{
     transform: perspective(37.5rem) rotateY(0deg);
   }
   .card:hover > .back2{
+    transform: perspective(37.5rem) rotateY(0deg);
+  }
+  .card:hover > .back3{
+    transform: perspective(37.5rem) rotateY(0deg);
+  }
+  .card:hover > .back4{
+    transform: perspective(37.5rem) rotateY(0deg);
+  }
+  .card:hover > .back5{
     transform: perspective(37.5rem) rotateY(0deg);
   }
 }
