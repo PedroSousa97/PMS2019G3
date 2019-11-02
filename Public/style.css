@@ -563,3 +563,39 @@ h2.heading{
     transform: perspective(37.5rem) rotateY(0deg);
   }
 }
+
+/*-----------------Processo------------*/
+
+.feature i.fas.fa-sitemap.fa-3x{
+  color:rgb(0, 180, 90);
+}
+@media screen and (min-width: 1400px) {
+.WBS{
+  background-image: url(img/WBS.png);
+  background-size: 59.44rem 21.81rem;
+  width: 59.44rem;
+  height: 21.81rem;
+  margin:0 auto;
+  z-index: 2;
+}
+}
+@media screen and (max-width: 900px) {
+  .WBS{
+    background-image: url(img/WBS2.png);
+    background-size: 12.6rem 21.8rem;
+    width: 12.6rem;
+    height: 21.8rem;
+    margin:0 auto;
+    z-index: 2;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width:900px){
+  .WBS{
+    background-image: url(img/WBS2.png);
+    background-size: 34.44rem 21.81rem;
+    width: 34.44rem;
+    height: 21.81rem;
+    margin:0 auto;
+    z-index: 2;
+  }
+}
