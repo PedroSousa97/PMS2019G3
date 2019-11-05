@@ -632,9 +632,6 @@ h2.heading{
 .informative{
   padding-top: 0.5rem;
 }
-.informative:hover{
-  color:rgb(0, 180, 90);
-}
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
