@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
-body {
-    overflow-x: hidden;
-    font-family: 'Lato', sans-serif;
-    color: black;
+html, body {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: black; 
 }
+
 
 .offset:before{
     display: block;
@@ -110,7 +115,19 @@ body {
     padding: .6rem 1.3rem;
     font-size: 1.1rem;
 }
+@media only screen and (max-width: 400px){
+  .caption h1{
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .8rem black;
+}
 
+.caption h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .8rem black;
+}
+}
 
 /*------ Sobre nós ------*/
 
@@ -569,10 +586,20 @@ h2.heading{
 .feature i.fas.fa-sitemap.fa-3x{
   color:rgb(0, 180, 90);
 }
+.feature i.fas.fa-tasks.fa-3x{
+  color:rgb(0, 180, 90);
+}
+.feature i.fas.fa-people-carry.fa-3x{
+  color:rgb(0, 180, 90);
+}
+.feature i.fas.fa-stopwatch.fa-3x{
+  color:rgb(0, 180, 90);
+}
+
 
 /* Trigger do Modal */
 #myImg {
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -599,7 +626,7 @@ h2.heading{
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 43.75rem;
 }
 
 /* Legenda */
@@ -607,11 +634,11 @@ h2.heading{
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 43.75rem;
   text-align: center;
   color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+  padding: 0.625rem 0;
+  height: 9.375rem;
 }
 
 /* Zoom no Modal */
@@ -631,7 +658,7 @@ h2.heading{
   top: 20rem;
   right: 1rem;
   color: #f1f1f1;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -643,10 +670,16 @@ h2.heading{
   cursor: pointer;
 }
 
+.informative{
+  padding-top: 0.5rem;
+}
+.informative:hover{
+  color:rgb(0, 180, 90);
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
   }
 }
-
