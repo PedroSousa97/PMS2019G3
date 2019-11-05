@@ -240,35 +240,34 @@
                       <div class="heading-underline"></div>
                   </div>
                   <div class="row text-center">
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                           <div class="feature">
                               <i class="fas fa-sitemap fa-3x" ></i>
-                              <h3>Work Breakdown Stracture</h3>
-                              <div class="WBS"></div>
+                              <h3>Work Breakdown Structure</h3>
+                              <!-- Ativar imagem modal -->
+                                <img id="myImg" src="img/WBS.png" alt="Work Breakdown Structure" style="width:100%;max-width:300px">
+
+                                  <!-- Classe Modal -->
+                                    <div id="myModal" class="modal">
+
+                                  <!-- Botão de fecho -->
+                                 <span class="close">&times;</span>
+
+                                <!-- Imagem dentro do modal -->
+                                <img class="modal-content" id="img01">
+
+                                <!-- Legenda da imagem -->
+                               <div id="caption"></div>
+                            </div>
                           </div>
                       </div>
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                               <div class="feature">
                                   <i class="fas fa-object-group fa-3x" ></i>
                                   <h3>Sprints</h3>
                                   <p>Os nossos projetos são dividos em ciclos (tipicamente semanais) chamados de Sprints.</p>
                               </div>
                           </div>
-                      <div class="col-md-12">
-                               <div class="feature">
-                                      <i class="fas fa-repeat fa-3x" ></i>
-                                      <h3>Comunicação</h3>
-                                      <p>No final de cada Sprint realizamos uma reunião com os nossos Stakeholders. Avaliamos desta forma o que já foi feito,
-                                          e caso necessário, realizamos melhorias e alterações. Comunicação é o nosso forte.</p>
-                              </div>
-                           </div>
-                      <div class="col-md-12">
-                                  <div class="feature">
-                                          <i class="fas fa-handshake-o fa-3x" ></i>
-                                          <h3>Eficácia e Eficiência</h3>
-                                          <p>É este o método que nos permite alcançar a eficácia e eficiência desejada. A satisfação do cliente com o resultado final é garantida!</p>
-                                  </div>
-                               </div>
                   </div> <!--fim das colunas-->
               </div> <!--Fim class narrow-->
           </div>
@@ -304,5 +303,27 @@
     <!-- jQuery first, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script> //Script para fazer a imagem modal funcionar
+    // obter modal
+    var modal = document.getElementById("myModal");
+    
+    // Obter imagem original e colocar dentro do modal - usar atributo "alt" como legenda
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Botão de fecho
+    var span = document.getElementsByClassName("close")[0];
+    
+    // Fechar o modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
   </body>
 </html>
