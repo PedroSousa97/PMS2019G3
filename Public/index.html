@@ -240,7 +240,7 @@
                       <div class="heading-underline"></div>
                   </div>
                   <div class="row text-center">
-                      <div class="col-md-3">
+                      <div class="col-md-6">
                           <div class="feature">
                               <i class="fas fa-sitemap fa-3x" ></i>
                               <h3>Work Breakdown Structure</h3>
@@ -262,27 +262,30 @@
                           </div>
                           <p class="informative">Click na imagem para visualizar.</p>
                       </div>
-                      <div class="col-md-3">
+                      <div class="col-md-6">
                               <div class="feature">
                                   <i class="fas fa-tasks fa-3x" ></i>
-                                  <h3>Tarefas</h3>
-                                  
+                                  <h3>Dependências, estimativas e resultados </h3>
+                                  <!-- Ativar imagem modal -->
+                                <img id="myImg2" src="img/tarefas.png" alt="Tarefas/Estimativas/Tempo" style="width:100%;max-width:300px">
+
+                                <!-- Classe Modal -->
+                                  <div id="myModal2" class="modal2">
+
+                                <!-- Botão de fecho -->
+                               <span class="close2">&times;</span>
+
+                              <!-- Imagem dentro do modal -->
+                              <img class="modal-content2" id="img02">
+
+                              <!-- Legenda da imagem -->
+                             <div id="caption2"></div>
+                          </div>
+                        </div>
+                        <p class="informative">Click na imagem para visualizar.</p>
                               </div>
                           </div>
-                      <div class="col-md-3">
-                          <div class="feature">
-                              <i class="fas fa-people-carry fa-3x" ></i>
-                              <h3>Responsáveis</h3>
-                              
-                          </div>
-                      </div>
-                      <div class="col-md-3">
-                          <div class="feature">
-                              <i class="fas fa-stopwatch fa-3x" ></i>
-                              <h3>Tempo Efetivo</h3>
-                              
-                          </div>
-                      </div>
+                    
                   </div> <!--fim das colunas-->
               </div> <!--Fim class narrow-->
           </div>
@@ -340,6 +343,29 @@
             // Fechar o modal
             span.onclick = function() {
               modal.style.display = "none";
+            }
+          </script>
+
+          <script> //Script para fazer a imagem modal funcionar
+            // obter modal
+            var modal2 = document.getElementById("myModal2");
+            
+            // Obter imagem original e colocar dentro do modal - usar atributo "alt" como legenda
+            var img2 = document.getElementById("myImg2");
+            var modalImg2 = document.getElementById("img02");
+            var captionText2 = document.getElementById("caption2");
+            img2.onclick = function(){
+              modal2.style.display = "block";
+              modalImg2.src = this.src;
+              captionText2.innerHTML = this.alt;
+            }
+            
+            // Botão de fecho
+            var span = document.getElementsByClassName("close2")[0];
+            
+            // Fechar o modal
+            span.onclick = function() {
+              modal2.style.display = "none";
             }
           </script>
   </body>
