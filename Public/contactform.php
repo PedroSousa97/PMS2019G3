@@ -22,7 +22,7 @@
     $to = 'henriquesantos293@gmail.com';               /*Email que irá receber*/
 
     $headers = "From: $email_from \r\n";
-    $headers .= "Reply to: $Email \r\n";
+    $headers = "Reply to: $Email \r\n";
 
     mail($to,$email_subject,$email_body,$headers);
 
