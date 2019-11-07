@@ -5,7 +5,7 @@
     $Data = $_POST['data'];
     $Anos = $_POST['exp'];
     $Área = $_POST['função'];
-    $Carta = $_POST['message']
+    $Carta = $_POST['message'];
 
 
     $email_from = 'henrique_807@hotmail.com';     /*email que irá enviar os dados*/
