@@ -17,7 +17,7 @@
                             "Data de Nascimento: $Data.\n".
                                 "Anos de Experiência: $Anos.\n".
                                  "Área a que se candidata: $Área.\n".
-                                  "Carta de Motivação: $Carta.\n".
+                                  "Carta de Motivação: $Carta.\n";
 
     $to = 'henriquesantos293@gmail.com';               /*Email que irá receber*/
 
