@@ -168,6 +168,22 @@ h2.heading{
     color: rgb(0, 180, 90);
 }
 
+.feature i.fas.fa-clipboard-list.fa-3x{
+  color: rgb(0, 180, 90);
+}
+
+@media only screen and (min-width: 1400px){
+  .feature i.fas.fa-handshake-o.fa-3x{
+    padding-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width:750px){
+  .feature i.fas.fa-handshake-o.fa-3x{
+    padding-top: 5rem;
+  }
+}
+
 .feature h3{
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -718,3 +734,20 @@ h2.heading{
     width: 100%;
   }
 }
+
+/*---------------Deliverables----------*/
+
+.jumb2{
+    margin-bottom: 0;
+    padding: 0rem 6rem 25rem;
+    border-radius: 0;
+}
+
+.feature i.fas.fa-file-download.fa-3x{
+  color: rgb(0, 180, 90);
+}
+
+.download{
+  padding-top: .5rem;
+}
+
