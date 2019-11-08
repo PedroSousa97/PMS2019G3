@@ -843,3 +843,19 @@ form .submit:hover{
 .contactos{
   padding-top: 10rem;
 }
+
+.feature i.fas.fa-phone.fa-1x{
+  color: rgb(0, 180, 90);
+  padding-bottom: .5rem;
+  padding-right: 1rem;
+}
+.feature i.fas.fa-at.fa-1x{
+  color: rgb(0, 180, 90);
+  padding-bottom: .5rem;
+  padding-right: 1rem;
+}
+.feature i.fas.fa-map-marked-alt.fa-1x{
+  color: rgb(0, 180, 90);
+  padding-bottom: .5rem;
+  padding-right: 1rem;
+}
