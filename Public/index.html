@@ -353,8 +353,9 @@
                       </div>
                   </div>
                   <div class="col-md-6"> <!---Formulário de Candidatura-->
+                      <iframe name="formcontrol" style="display:none;"></iframe>
                       <div class="contact-form">
-                        <form id="contact-form" method="post" action="/contactform.php">
+                        <form id="contact-form" method="post" action="/mail#" target="formcontrol">
 
                           <input name="name" type="text" class="form-control" placeholder="Name" required>
                           <br>
@@ -366,7 +367,7 @@
                           <br>
                           <input name="exp" type="number" class="form-control" placeholder="Years of Experience" required>
                           <br>
-                          <input name="função" type="text" class="form-control" placeholder="Job you are applying for" required>
+                          <input name="funcao" type="text" class="form-control" placeholder="Job you are applying for" required>
                           <br>
                           <textarea name="message" class="form-control" placeholder="Motivacional Letter" row="4" required></textarea>
                           <br>
