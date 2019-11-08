@@ -801,6 +801,10 @@ h2.heading{
 
 /*-----Formulário de cancidatura*/
 
+form{
+  padding-top: 5rem;
+}
+
 .form-control{
   background: transparent;
   border: none;
@@ -829,3 +833,13 @@ form .submit:hover{
   cursor: pointer;
 }
 
+
+/*----------Contactos--------------*/
+
+.infos{
+  padding-bottom: 2rem;
+}
+
+.contactos{
+  padding-top: 10rem;
+}
