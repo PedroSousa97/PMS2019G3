@@ -896,3 +896,16 @@ form .submit:hover{
   }
 }
 
+/*------------Footer------------*/
+
+.page-footer{
+  background-color: rgba(216, 197, 0, 0.8);
+}
+
+.footer-copyright{
+    color: white;
+}
+
+.footref{
+  color: rgb(0, 180, 90);
+}
