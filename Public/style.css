@@ -840,8 +840,20 @@ form .submit:hover{
   padding-bottom: 2rem;
 }
 
+@media only screen and (max-width: 800px){
+  .infos{
+    font-size: .8rem;
+  }
+}
+
 .contactos{
   padding-top: 10rem;
+}
+
+@media only screen and (max-width: 800px){
+  .contactos{
+    padding-top: 5rem;
+  }
 }
 
 .feature i.fas.fa-phone.fa-1x{
@@ -859,3 +871,28 @@ form .submit:hover{
   padding-bottom: .5rem;
   padding-right: 1rem;
 }
+
+.mapa{
+  padding-top: 5rem;
+}
+
+@media only screen and (max-width: 700px){
+  .mapa {
+    width: 50rem;
+    height: 30rem;
+  }
+}
+
+/*--------------Correção de fontes dos headings, em small screens fica desalinhado devido ao tamanho-----------*/
+
+@media only screen and (max-width: 700px){
+  .heading.x{
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 700px){
+  .heading.y{
+    font-size: 1.2rem;
+  }
+}
+
