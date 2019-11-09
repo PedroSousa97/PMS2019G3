@@ -794,6 +794,12 @@ h2.heading{
     text-align: justify;
 }
 
+@media only screen and (max-width: 600px){
+  .candidaturaesp {
+    text-align: center;
+  }
+}
+
 .sorte{
   text-transform: uppercase;
   font-weight: 700;
