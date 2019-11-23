@@ -542,9 +542,15 @@
           </script>
 
             <script type="text/javascript"> //Adicionar o efeito de fadeOut ao loading screen quando a página estiver carregada
-                window.addEventListener("load",function(){
+                
+                function loadingscreen(){
                   const loader = document.querySelector(".loader-wrapper");
                   loader.className += " hidden"; // class = "loader-wraper hidden"
+                }
+                
+                
+                window.addEventListener("load",function(){
+                  setTimeout("loadingscreen()",3500);
                 });
             </script>
   </body>
