@@ -43,15 +43,15 @@ html, body {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgb(0, 180, 90);
+    color:rgb(0,78,146);
 }
 
 .custom-toggler.navbar-toggler {
-    border-color: rgb(0, 180, 90);
+    border-color:rgb(0,78,146);
     border-width: .2rem;
 }
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 180, 90, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,78,146, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 /*----- Página Inicial -----*/
@@ -148,28 +148,28 @@ h2.heading{
 .heading-underline{
     width: 4rem;
     height: .2rem;
-    background-color: rgb(0, 180, 90);
+    background-color: rgb(0,78,146);
     margin: 0 auto 2rem;
 }
 
 .feature i.fas.fa-users.fa-3x{
-    color: rgb(0, 180, 90);
+    color: rgb(0,78,146);
 }
 
 .feature i.fas.fa-object-group.fa-3x{
-    color: rgb(0, 180, 90);
+    color: rgb(0,78,146);
 }
 
 .feature i.fas.fa-repeat.fa-3x{
-    color:rgb(0, 180, 90);
+    color:rgb(0,78,146);
 }
 
 .feature i.fas.fa-handshake-o.fa-3x{
-    color: rgb(0, 180, 90);
+    color: rgb(0,78,146);
 }
 
 .feature i.fas.fa-clipboard-list.fa-3x{
-  color: rgb(0, 180, 90);
+  color: rgb(0,78,146);
 }
 
 @media only screen and (min-width: 1400px){
@@ -559,10 +559,10 @@ h2.heading{
 /*-----------------Processo------------*/
 
 .feature i.fas.fa-sitemap.fa-3x{
-  color:rgb(0, 180, 90);
+  color:rgb(0,78,146);
 }
 .feature i.fas.fa-tasks.fa-3x{
-  color:rgb(0, 180, 90);
+  color:rgb(0,78,146);
 }
 
 /* Trigger do Modal */
@@ -744,9 +744,11 @@ h2.heading{
 }
 
 .feature i.fas.fa-file-download.fa-3x{
-  color: rgb(0, 180, 90);
+  color: rgb(0,78,146);
 }
-
+.feature i.fas.fa-file-download.fa-3x:hover{
+  color: rgb(0, 144, 228);
+}
 .download{
   padding-top: .5rem;
 }
@@ -786,7 +788,7 @@ h2.heading{
 }
 
 .feature i.fas.fa-building.fa-3x{
-  color: rgb(0, 180, 90);
+  color: rgb(0,78,146);
   padding-bottom: .5rem;
 }
 
@@ -815,7 +817,7 @@ form{
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid rgb(0, 180, 90);
+  border-bottom: 1px solid rgb(0,78,146);
   color: white;
   font-size: 1.1rem;
   margin-bottom: 1rem;
@@ -826,7 +828,7 @@ input{
 }
 
 form .submit{
-  background: rgb(0, 180, 90);
+  background: rgb(0,78,146);
   border-color: transparent;
   font-size: 1.25rem;
   font-weight: 700;
@@ -835,7 +837,7 @@ form .submit{
 }
 
 form .submit:hover{
-  background-color:rgb(0, 219, 110);
+  background-color:rgb(0, 144, 228);
   cursor: pointer;
 }
 
@@ -863,17 +865,17 @@ form .submit:hover{
 }
 
 .feature i.fas.fa-phone.fa-1x{
-  color: rgb(0, 180, 90);
+  color: rgb(0,78,146);
   padding-bottom: .5rem;
   padding-right: 1rem;
 }
 .feature i.fas.fa-at.fa-1x{
-  color: rgb(0, 180, 90);
+  color: rgb(0,78,146);
   padding-bottom: .5rem;
   padding-right: 1rem;
 }
 .feature i.fas.fa-map-marked-alt.fa-1x{
-  color: rgb(0, 180, 90);
+  color: rgb(0,78,146);
   padding-bottom: .5rem;
   padding-right: 1rem;
 }
@@ -913,5 +915,5 @@ form .submit:hover{
 }
 
 .footref{
-  color: rgb(0, 180, 90);
+  color: rgb(0,78,146);
 }
