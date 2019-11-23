@@ -36,7 +36,7 @@
   </head>
   <body data-spy="scroll" data-target="#navbarResponsive">
 
-        <div id="loader-wrapper">
+        <div class="loader-wrapper">
             <span class="loader"><span class="loader-inner"></span></span>
         </div>
 
@@ -541,15 +541,11 @@
             }
           </script>
 
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-          <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
-          <script>
-            $(window).load(function() {
-              // Animate loader off screen
-              $(".loader-wrapper").fadeOut("slow");;
-            });
-          </script>
-
+            <script type="text/javascript"> //Adicionar o efeito de fadeOut ao loading screen quando a página estiver carregada
+                window.addEventListener("load",function(){
+                  const loader = document.querySelector(".loader-wrapper");
+                  loader.className += " hidden"; // class = "loader-wraper hidden"
+                });
+            </script>
   </body>
 </html>

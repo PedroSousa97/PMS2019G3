@@ -19,7 +19,7 @@ html, body {
 }
 
 /*--------Loading Page-------*/
-#loader-wrapper{
+.loader-wrapper{
   width:100%;
   height: 100vh;
   position: fixed;
@@ -27,10 +27,17 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000428;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url('img/backgroundloader.png');
+  background-size: 100% 100vh;
+}
 
+@media screen and (max-width: 400px) {
+  .loader-wrapper{
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
 }
 
 
@@ -41,6 +48,11 @@ html, body {
   position: relative;
   border: 4px solid rgb(216, 197, 0);
   animation: loader 2s infinite ease;
+}
+
+.loader-wrapper.hidden{
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
 }
 
 .loader-inner {
@@ -95,6 +107,12 @@ html, body {
   }
 }
 
+@keyframes fadeOut{
+  100%{
+    opacity:0;
+    visibility: hidden;
+  }
+}
 
 /*------------ Navegação ----------*/
 
