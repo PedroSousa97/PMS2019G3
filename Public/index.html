@@ -571,11 +571,18 @@
                   const loader = document.querySelector(".loader-wrapper");
                   loader.className += " hidden"; // class = "loader-wraper hidden"
                 }
+                function loadingnavbar(){
+                  const loader = document.querySelector(".navbar");
+                  loader.className += " display"; // class = "navbar display"
+                }
                 
                 
                 window.addEventListener("load",function(){
                   setTimeout("loadingscreen()",5000);
+                  setTimeout("loadingnavbar()",5000);
                 });
+                
+
             </script>
   </body>
 </html>

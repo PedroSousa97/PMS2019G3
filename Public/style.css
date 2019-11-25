@@ -55,8 +55,8 @@ html, body {
   animation: line-anim 2s ease forwards;
 }
 #loader path:nth-child(2){
-  stroke-dasharray: 470;
-  stroke-dashoffset: 470;
+  stroke-dasharray: 470.2;
+  stroke-dashoffset: 470.2;
   animation: line-anim 2s ease forwards;
 }
 #loader path:nth-child(3){
@@ -127,8 +127,12 @@ html, body {
     font-weight: 700;
     letter-spacing: .1rem;
     background: rgba(216, 197, 0, 0.8)!important;
-    animation: fade-in-nav 1s ease forwards 5.5s;
 }
+
+.navbar.display{
+    animation: fade-in-nav 1s ease forwards;
+}
+
 @keyframes fade-in-nav{
   100%{
     opacity: 80;
