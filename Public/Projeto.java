@@ -58,4 +58,7 @@ public class Projeto{
         return fases;
     }
 
+    public ArrayList<Integer> addFases(Integer fase){
+        fases.add(fase);
+    }
 }
