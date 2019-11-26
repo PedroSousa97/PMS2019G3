@@ -6,7 +6,7 @@ public class Projeto{
     private ArrayList<String> sponsors;
     private ArrayList<String> clientes;
     private ArrayList<String> users;
-
+    private ArrayList<Integer> fases; 
 
     public Projeto(int numSequencial,String nomeID, String lider){
         this.numSequencial=numSequencial;
@@ -15,6 +15,7 @@ public class Projeto{
         sponsors = new ArrayList<String>(); 
         clientes = new ArrayList<String>();
         users = new ArrayList<String>();
+        fases = new ArrayList<Integer>();
     }
 
     public int getNumSequencial(){
@@ -52,5 +53,9 @@ public class Projeto{
     public ArrayList<String> getUsers(){
         return users;
     }
-    
+
+    public ArrayList<Integer> getFases(){
+        return fases;
+    }
+
 }
