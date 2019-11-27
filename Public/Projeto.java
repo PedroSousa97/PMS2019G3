@@ -6,7 +6,8 @@ public class Projeto{
     private ArrayList<String> sponsors;
     private ArrayList<String> clientes;
     private ArrayList<String> users;
-    private ArrayList<Integer> fases; 
+    private ArrayList<Integer> fases;
+    private enum prioridade{Alta, Média, Baixa}
 
     public Projeto(int numSequencial,String nomeID, String lider){
         this.numSequencial=numSequencial;
