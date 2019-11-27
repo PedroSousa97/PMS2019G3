@@ -70,7 +70,7 @@ public class Projeto{
         return fases;
     }
 
-    public void addFases(Integer fase) {
+    public void addFases(Integer fase){ 
         fases.add(fase);
     }
 }
