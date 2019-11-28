@@ -74,4 +74,12 @@ public class Projeto{
     public void addFases(Integer fase){ 
         fases.add(fase);
     }
+<<<<<<< Updated upstream
+=======
+
+    public String toString(){
+        info=""
+    }
+    //public boolean equals
+>>>>>>> Stashed changes
 }
