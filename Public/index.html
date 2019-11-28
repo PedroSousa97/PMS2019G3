@@ -316,59 +316,67 @@
                       <h2 class="heading x">Processo</h2>
                       <div class="heading-underline"></div>
                   </div>
-                  <div class="row text-center">
-                      <div class="col-md-6">
-                          <div class="feature">
-                              <i class="fas fa-sitemap fa-3x" ></i>
-                              <h3 class="notranslate">Work Breakdown Structure</h3>
-                              <!-- Ativar imagem modal -->
-                                <img id="myImg" src="img/WBS.png" alt="Work Breakdown Structure" style="width:100%;max-width:300px">
-
-                                  <!-- Classe Modal -->
-                                    <div id="myModal" class="modal">
-
-                                  <!-- Botão de fecho -->
-                                 <span class="close">&times;</span>
-
-                                <!-- Imagem dentro do modal -->
-                                <img class="modal-content" id="img01">
-
-                                <!-- Legenda da imagem -->
-                               <div id="caption"></div>
-                            </div>
-                          </div>
-                          <p class="informative">Clique na imagem para visualizar.</p>
-                      </div>
-                      <div class="col-md-6">
-                              <div class="feature">
-                                  <i class="fas fa-tasks fa-3x" ></i>
-                                  <h3>Dependências, estimativas e resultados </h3>
-                                  <!-- Ativar imagem modal -->
-                                <img id="myImg2" src="img/tarefas.png" alt="Tarefas/Dependências/Estimativas/Tempo/Responsáveis" style="width:100%;max-width:300px">
-
-                                <!-- Classe Modal -->
-                                  <div id="myModal2" class="modal2">
-
-                                <!-- Botão de fecho -->
-                               <span class="close2">&times;</span>
-
-                              <!-- Imagem dentro do modal -->
-                              <img class="modal-content2" id="img02">
-
-                              <!-- Legenda da imagem -->
-                             <div id="caption2"></div>
-                          </div>
-                        </div>
-                        <p class="informative">Clique na imagem para visualizar.</p>
-                              </div>
-                          </div>
-                    
-                  </div> <!--fim das colunas-->
               </div> <!--Fim class narrow-->
-          </div>
+              <div class="portraitphoto text-center">
+                  <img src="img/rotatephone.png" alt="rotate phone">
+              </div>
+              <div class="portraittext text-center">
+                  <p>Rode o seu dispositivo para visualizar a timeline</p>
+              </div>
+              
+              <section id="cd-timeline" class="cd-container">
+                  <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                    </div>
+              
+                    <div class="cd-timeline-content">
+                      <h2>Sprint 1</h2>
+                      <div class="timeline-content-info">
+                        <span class="timeline-content-info-title">
+                          <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+                          22/10/2019 até 09/11/2019
+                        </span>
+                      </div>
+                      <p>Criação de um novo Website e logótipo para a nossa empresa. Principais requisitos do website:</p>
+                      <ul class="content-skills">
+                      <li>Responsivo e dinâmico;</li>
+                      <li>Objetivos da empresa;</li>
+                      <li>Multilingual;</li>
+                      <li>Publicação de documentação de cada sprint;</li>
+                      </ul>
+                      <a href="#" class="buttontimeline"><img src="img/+info.png" alt="maisinfo"></a>
+                    </div> <!-- cd-timeline-content -->
+                  </div> <!-- cd-timeline-block -->
+
+                  <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-picture">
+                    </div>
+              
+                    <div class="cd-timeline-content">
+                      <h2>Sprint 2</h2>
+                      <div class="timeline-content-info">
+                        <span class="timeline-content-info-title">
+                          <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+                          09/11/2019 até 30/11/2019
+                        </span>
+                      </div>
+                      <p>Criação de uma "CASE Tool" (Computer Aided Software Engineering Tool) para uso interno na nossa empresa. Pode ser visto como uma 
+                      "Project Management Framework". Problemas:</p>
+                      <ul class="content-skills">
+                      <li>Abordagem a adotar ("big design upfront" ou incremental);</li>
+                      <li>Diagramas UML;</li>
+                      <li>Estimativas;</li>
+                      <li>Implementação de funcionalidades;</li>
+                      </ul>
+                      <a href="#" class="buttontimeline"><img src="img/+info.png" alt="maisinfo"></a>
+                    </div> <!-- cd-timeline-content -->
+                  </div> <!-- cd-timeline-block -->
+              
+                </section> <!-- cd-timeline -->
+
           <!--Fim Jumbotron bootstrap-->
+          </div>
       </div>
-    </div>
 
   <!--End Desenvolvimento-->
 
@@ -519,51 +527,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    
    
-          <script> //Script para fazer a imagem modal funcionar
-            // obter modal
-            var modal = document.getElementById("myModal");
-            
-            // Obter imagem original e colocar dentro do modal - usar atributo "alt" como legenda
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = this.alt;
-            }
-            
-            // Botão de fecho
-            var span = document.getElementsByClassName("close")[0];
-            
-            // Fechar o modal
-            span.onclick = function() {
-              modal.style.display = "none";
-            }
-          </script>
-
-          <script> //Script para fazer a imagem modal funcionar
-            // obter modal
-            var modal2 = document.getElementById("myModal2");
-            
-            // Obter imagem original e colocar dentro do modal - usar atributo "alt" como legenda
-            var img2 = document.getElementById("myImg2");
-            var modalImg2 = document.getElementById("img02");
-            var captionText2 = document.getElementById("caption2");
-            img2.onclick = function(){
-              modal2.style.display = "block";
-              modalImg2.src = this.src;
-              captionText2.innerHTML = this.alt;
-            }
-            
-            // Botão de fecho
-            var span = document.getElementsByClassName("close2")[0];
-            
-            // Fechar o modal
-            span.onclick = function() {
-              modal2.style.display = "none";
-            }
-          </script>
 
             <script type="text/javascript"> //Adicionar o efeito de fadeOut ao loading screen quando a página estiver carregada
                 
