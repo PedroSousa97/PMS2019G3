@@ -15,7 +15,7 @@ public class Problema{
         this.sintomas=sintomas;
     }
 
-    public String getCausas(String causas){
+    public String getCausas(){
         return causas;
     }
 
