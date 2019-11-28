@@ -10,6 +10,7 @@ public class Projeto{
     private ArrayList<Integer> fases;
 
     //private enum prioridade{Alta, Média, Baixa}
+    //private enum logOperaçoes{conclusao, reabertura, arquivo, relembrar, suspender}
 
     public Projeto(int numSequencial,String nomeID, String lider, String descricao){
         this.numSequencial=numSequencial;
