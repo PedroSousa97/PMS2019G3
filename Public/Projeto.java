@@ -74,12 +74,14 @@ public class Projeto{
     public void addFases(Integer fase){ 
         fases.add(fase);
     }
-<<<<<<< Updated upstream
-=======
+    //public boolean equals
 
     public String toString(){
-        info=""
+        String info;
+        info ="Número interno sequencial: "+numSequencial+"\n";
+        info+="Nome identificativo: "+nomeID+"\n";
+        info+="Lider: "+lider+"\n";
+        info+="Descricao: "+descricao+"\n";
+        return info;
     }
-    //public boolean equals
->>>>>>> Stashed changes
 }
