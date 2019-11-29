@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+html, body {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: black; 
+}
+
+
+.offset:before{
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+/*------------ Navegação ----------*/
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    background: rgba(216, 197, 0, 0.8)!important;
+}
+
+.navbar-brand img{
+    height: 4rem;
+}
+
+.navbar-nav li{
+    padding-right: .9rem;
+
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:rgb(0,78,146);
+}
+
+.custom-toggler.navbar-toggler {
+    border-color:rgb(0,78,146);
+    border-width: .2rem;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,78,146, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*----------Página------------*/
+.jumbotron{
+    margin-bottom: 0;
+    padding: 25rem 6rem 25rem;
+    border-radius: 0;
+}
+
+/*------------Footer------------*/
+
+.page-footer{
+    background-color: rgba(216, 197, 0, 0.8);
+  }
+  
+  .footer-copyright{
+      color: white;
+  }
+  
+  .footref{
+    color: rgb(0,78,146);
+  }
