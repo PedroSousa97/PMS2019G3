@@ -677,10 +677,6 @@ h2.heading{
   display: none;
 }
 
-*{ 
-  box-sizing: border-box;
-}
-
 .cd-container {
 width: 90%;
 max-width: 1080px;
