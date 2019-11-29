@@ -54,8 +54,37 @@ html, body {
 /*----------Página------------*/
 .jumbotron{
     margin-bottom: 0;
-    padding: 25rem 6rem 25rem;
+    padding: 10rem 6rem 25rem;
     border-radius: 0;
+}
+
+h2.heading{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+
+.heading-underline{
+    width: 4rem;
+    height: .2rem;
+    background-color: rgb(0,78,146);
+    margin: 0 auto 2rem;
+}
+
+.feature h3{
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: .4rem;;
+}
+
+.feature p{
+    font-size: 1.1rem;
+}
+
+.intro{
+    text-align: justify;
 }
 
 /*------------Footer------------*/
