@@ -117,8 +117,8 @@
                                                 é encontrar uma solução comprada OTS (off the shelf) que contenha a totalidade (ou parte
                                                 substancial) dos requisitos apresentados. Sendo assim, tendo em conta o custo e complexidade de implementação dos canais de comunicação,
                                                 a nossa equipa encontrou uma ferramenta externa para tal efeito. Os canais de comunicação a nosso ver, são uma funcionalidade
-                                                complementar e não essencial da CASE Tool a desenvolver, não se justificando então o tempo que seria despendido para criar a mesma.<br>
-                                                Posto isto a nossa equipa apresenta como solução o software NodeBB. Um fórum de última geração e mobile-ready que contém todas as
+                                                complementar e não essencial da CASE Tool a desenvolver, não se justificando então o tempo que seria despendido para criar a mesma.<br><br>
+                                                Posto isto a nossa equipa apresenta como solução o software gratuito NodeBB. Um fórum de última geração e mobile-ready que contém todas as
                                                 funcionalidades requesitadas para o nosso projeto, e que posteriormente será integrado com a base de dados da nossa CASE Tool.<br>
                                                 Para mais informações relativamente a este software visitar o website <a href="https://nodebb.org/">https://nodebb.org/</a>.
                                         </p>
@@ -148,7 +148,7 @@
                                           <div class="clik">
                                                 <p class="informative2">Clique na imagem para visualizar.</p>
                                             </div>
-                                          <p class="legenda">Neste Diagrama de Classes apresentamos todas as entidades e atributos de um projeto. Alguns atributos do projeto no entanto formam
+                                          <p class="legenda">Neste Diagrama de Classes apresentamos todas as entidades envolvidas e atributos de um projeto. Alguns atributos do projeto no entanto formam
                                               novas classes, nomeadamente as equipas, tarefas e fases do projeto. Dentro destas podemos ter mais classes associadas. Em geral,
                                               este diagrama representa o funcionamento geral da CASE Tool e o que esta eventualmente poderá conter.
                                           </p>
@@ -158,7 +158,306 @@
                                             <h2 class="headingd">Casos de Utilização</h2>
                                             <div class="heading-underline"></div>
                                     </div>
+                                    <div class="col-md-12">
+                                            <div class="feature">
+                                                <p class="intro">Após a leitura e análise dos requisitos para a criação da CASE Tool, criamos uma visão do que será o nosso produto final e 
+                                                    extraímos os seguintes casos de utilização:</p>
+                                                    <div class="row">
+                                                    <div class="col-md-6">
+                                                    <ul class="topicos2">
+                                                            <li>Realizar Registo;</li>
+                                                            <li>Efetuar Login;</li>
+                                                            <li>Criar Projeto;</li>
+                                                                <ul class="topicos2">
+                                                                    <li>Criar Perfil do Projeto;</li>
+                                                                    <li>Associar Sponsor;</li>
+                                                                    <li>Associar Pessoas (clientes/utilizadores);</li>
+                                                                    <li>Associar Fases do Projeto;</li>
+                                                                        <ul class="topicos2">
+                                                                            <li>Associar Gestor de Fase;</li>
+                                                                        </ul>
+                                                                    <li>Associar Estado Geral do Projeto;</li>
+                                                                        <ul class="topicos2">
+                                                                            <li>Projeto Concluído;</li>
+                                                                            <li>Projeto Arquivado;</li>
+                                                                            <li>Suspender Comunicações Externas;</li>
+                                                                            <li>Suspender Custos e Compromissos;</li>
+                                                                            <li>Desenvolvimento Suspenso;</li>
+                                                                        </ul>
+                                                                    <li>Atribuir Nível de Prioridade do Projeto;</li>
+                                                                    <ul class="topicos2">
+                                                                            <li>Alterar Nível de Prioridade do Projeto;</li>
+                                                                        </ul>
+                                                                    <li>Associar Referências de projetos similiares;</li>
+                                                                        <ul class="topicos2">
+                                                                            <li>Associar nota informativa;</li>
+                                                                        </ul>
+                                                                </ul>
+                                                            <li>Visualizar dados do Projeto;</li>
+                                                            <li>Alterar dados do Projeto;</li>
+                                                                <ul class="topicos2">
+                                                                    <li>Dados de Fase;</li>
+                                                                    <li>Dados de Equipa;</li>
+                                                                    <li>Dados de Tarefas;</li>
+                                                                </ul>
+                                                            <li>Criar Fases;</li>
+                                                                <ul class="topicos2">
+                                                                    <li>Associar Equipa Interna;</li>
+                                                                        <ul class="topicos2">
+                                                                            <li>Classificar Associações;</li>
+                                                                        </ul>
+                                                                    <li>Associar Designação;</li>
+                                                                    <li>Associar Data de Início e de Conclusão;</li>
+                                                                    <li>Associar Representantes do Cliente;</li>
+                                                                </ul>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                        <ul class="topicos2">
+                                                                <li>Criar Tarefas;</li>
+                                                                    <ul class="topicos2">
+                                                                        <li>Criar Perfil da Tarefa;</li>
+                                                                        <li>Criar Dependências;</li>
+                                                                        <li>Associar Estado da Tarefa;</li>
+                                                                        <li>Adicionar comentários hierárquicos;</li>
+                                                                        <li>Associar Clientes a Tarefa;</li>
+                                                                        <li>Associar Prioridade de Tarefa;</li>
+                                                                        <li>Associar Pessoas a Tarefa;</li>
+                                                                        <li>Associar Número Mínimo e Máximo de Implementadores e Associar Implementadores</li>
+                                                                        <li>Associar Checklist;</li>
+                                                                        <li>Criar Equipa de Risco;</li>
+                                                                            <ul class="topicos2">
+                                                                                <li>Criar Lista de Riscos e Seus Atributos;</li>
+                                                                                <li>Realizar e Publicar Avaliação de Risco;</li>
+                                                                                <li>Publicar Planos de Mitigação de Risco;</li>
+                                                                            </ul>
+                                                                        <li>Adicionar Estimativas de Esforço da Tarefa;</li>
+                                                                            <ul class="topicos2">
+                                                                                <li>Criar Lista com Estimativas de Esforço;</li>
+                                                                            </ul>
+                                                                        <li>Adicionar Tempo de Contingência Fixa;</li>
+                                                                        <li>Pré-Selecionar Implementadores;</li>
+                                                                        <li>Adicionar Grau de Confiança;</li>
+                                                                        <li>Associar Método do Caminho Crítico;</li>
+                                                                        <li>Associar Data/Hora Específica;</li>
+                                                                    </ul>
+                                                                <li>Associar Tarefas a Fase;</li>
+                                                                <li>Criar Lisa de Recursos Associados;</li>
+                                                                    <ul class="topicos2">
+                                                                        <li>Associar Unidades a Consumir;</li>
+                                                                    </ul>
+                                                                <li>Criar Lista de Esforço Despendido;</li>
+                                                                    <ul class="topicos2">
+                                                                        <li>Visualizar Percentagem de Esforço;</li>
+                                                                        <li>Visualizar Estimativa Atual da Tarefa;</li>
+                                                                    </ul>
+                                                                <li>Associar Milestone/Deadline;</li>
+                                                        </ul>
+                                                    </div>
+                                            </div>
 
+                                            <div class="row">
+                                                    <p>Tendo em conta que iremos usar uma solução comprada OTS (off the shelf) para o Canal de comunicação, 
+                                                            apresentamos os casos de utilização em separado, e estes em geral são os seguintes:
+                                                         </p>
+                                                    <div class="col-md-6">
+                                                    <ul class="topicos2">
+                                                            <li>Criar Canal de Comunicação;</li>
+                                                                <ul class="topicos2">
+                                                                    <li>Associar ao Nível do Projeto;</li>
+                                                                    <li>Associar ao Nível da Fase;</li>
+                                                                    <li>Associar ao Nível da Tarefa;</li>
+                                                                </ul>
+                                                            <li>Partilhar Mensagens;</li>
+                                                            <li>Visualizar Mensagens;</li>
+                                                            <li>Referenciar Notícias;</li>
+                                                            <li>Referenciar Standards;</li>
+                                                            <li>Referenciar Leis;</li>
+                                                            <li>Associar Feedback a Mensagens;</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                    </div>
+                                            <p class="intro">De todos os Casos de Utilização acima apresentados, a nossa equipa decidiu selecionar aqueles que achava que eram mais relevantes
+                                                para a primeira implementação. Os casos de Utilização escolhidos foram os seguintes:
+                                            </p>
+                                            <ul class="topicos2">
+                                                <li>Realizar Registo;</li>
+                                                <li>Efetuar Login;</li>
+                                                <li>Criar Projeto;</li>
+                                                <li>Criar Perfil do Projeto;</li>
+                                                <li>Associar Sponsor;</li>
+                                                <li>Associar Pessoas (clientes/utilizadores);</li>
+                                                <li>Visualizar dados do Projeto;</li>
+                                                <li>Alterar dados do Projeto;</li>
+                                            </ul>
+                                            <p class="intro">Os seguintes diagramas focam-se apenas nestes Casos de Utilização que foram selecionados para serem implementados na próxima fase.
+                                            </p>
+                                    </div>
+
+
+                                    <div class="col-12">
+                                            <h2 class="headingd">Diagrama de Casos de Utilização</h2>
+                                            <div class="heading-underline"></div>
+                                    </div>
+                                    <div class="col-12">            
+                                            <!-- Ativar imagem modal -->
+                                            <img id="myImg2" src="img/UC.png" alt="Use Case Diagram" style="width:100%;max-width:800px">
+
+                                            <!-- Classe Modal -->
+                                              <div id="myModal2" class="modal2">
+            
+                                            <!-- Botão de fecho -->
+                                           <span class="close2">&times;</span>
+            
+                                          <!-- Imagem dentro do modal -->
+                                          <img class="modal-content2" id="img02">
+            
+                                          <!-- Legenda da imagem -->
+                                         <div id="caption2"></div>
+                                          </div>
+                                          <div class="clik">
+                                                <p class="informative2">Clique na imagem para visualizar.</p>
+                                            </div>
+                                          <p class="legenda">Neste Diagrama de Casos de Utilização apresentamos as possíveis ações dos utilizadores da nossa CASE Tool, mas apenas do que será
+                                              implementado para a próxima fase. O Diagrama é intuitivo e de fácil compreensão. Todos os Funcionário realizaraõ um Registo inicial de conta,
+                                              e posteriormente o Login. Para os Funcionários que não sejam Líderes de Projeto apenas poderaõ visualizar dados de Projetos. Todas as outras ações 
+                                              estão reservadas para o Líder de Projeto.
+                                          </p>
+                                    </div>
+
+                                    <div class="col-12">
+                                            <h2 class="headingd">Diagramas de Sequência</h2>
+                                            <div class="heading-underline"></div>
+                                    </div>
+                                    <div class="col-12">            
+                                            <!-- Ativar imagem modal -->
+                                            <img id="myImg4" src="img/Registo.png" alt="Registration Sequence Diagram" style="width:100%;max-width:800px">
+
+                                            <!-- Classe Modal -->
+                                              <div id="myModal4" class="modal4">
+            
+                                            <!-- Botão de fecho -->
+                                           <span class="close4">&times;</span>
+            
+                                          <!-- Imagem dentro do modal -->
+                                          <img class="modal-content4" id="img04">
+            
+                                          <!-- Legenda da imagem -->
+                                         <div id="caption4"></div>
+                                          </div>
+                                          <div class="clik">
+                                                <p class="informative2">Clique na imagem para visualizar.</p>
+                                            </div>
+                                          <p class="legenda">Diagrama de Sequência de Registo: Neste diagrama apresentamos a sequência do processo de Registo, onde o utilizador
+                                              insere os dados de registo, é feita uma verificação dos dados em server-side, depois são enviados os dados para a base de dados,
+                                              onde será verificado se já existem dados iguais ou não. Se existir dá origem a erro e informa o utilizador para utlizar outros dados.
+                                              Se os dados forem corretos e inexistentes, o utilizador é registado e redirecionado para a página principal (Dashboard) da CASE Tool.
+                                          </p>
+                                    </div>
+                                    <div class="col-12">            
+                                            <!-- Ativar imagem modal -->
+                                            <img id="myImg3" src="img/Login.png" alt="Login Sequence Diagram" style="width:100%;max-width:800px">
+
+                                            <!-- Classe Modal -->
+                                              <div id="myModal3" class="modal3">
+            
+                                            <!-- Botão de fecho -->
+                                           <span class="close3">&times;</span>
+            
+                                          <!-- Imagem dentro do modal -->
+                                          <img class="modal-content3" id="img03">
+            
+                                          <!-- Legenda da imagem -->
+                                         <div id="caption3"></div>
+                                          </div>
+                                          <div class="clik">
+                                                <p class="informative2">Clique na imagem para visualizar.</p>
+                                            </div>
+                                          <p class="legenda">Diagrama de Sequência de Login: Neste diagrama apresentamos a sequência do processo de Login, onde o utilizador
+                                              insere a pass e username, é realizada a função de hash no servidor para desencriptar a password e posteriormente os dados desencriptados
+                                              são verificados. Se estiverem corretos avança para a página principal (Dashboard) da CASE Tool, caso contrário apresenta mensagem de erro 
+                                              de conexão.
+                                          </p>
+                                    </div>
+                                    <div class="col-12">            
+                                            <!-- Ativar imagem modal -->
+                                            <img id="myImg5" src="img/Projeto.png" alt="Project Sequence Diagram" style="width:100%;max-width:800px">
+
+                                            <!-- Classe Modal -->
+                                              <div id="myModal5" class="modal5">
+            
+                                            <!-- Botão de fecho -->
+                                           <span class="close5">&times;</span>
+            
+                                          <!-- Imagem dentro do modal -->
+                                          <img class="modal-content5" id="img05">
+            
+                                          <!-- Legenda da imagem -->
+                                         <div id="caption5"></div>
+                                          </div>
+                                          <div class="clik">
+                                                <p class="informative2">Clique na imagem para visualizar.</p>
+                                            </div>
+                                          <p class="legenda">Diagrama de Sequência de Projeto: Neste diagrama apresentamos a sequência de processos de um Projeto, onde o utilizador
+                                              pode criar, visualizar, e alterar dados. No caso da criação e alteração de projetos é feito um envio dos dados para a base de dados, e uma 
+                                              verificação. Se os dados estiverem corretos, o projeto é criado/alterado com sucesso, caso contrário é apresentada uma menagem de erro ao 
+                                              utilizador.
+                                          </p>
+                                    </div>
+
+
+                                    <div class="col-12">
+                                            <h2 class="headingd">Diagrama de Máquina de Estados</h2>
+                                            <div class="heading-underline"></div>
+                                    </div>
+
+                                    <div class="col-12">            
+                                            <!-- Ativar imagem modal -->
+                                            <img id="myImg6" src="img/maquinaestadosCASE.png" alt="State Machine Diagram" style="width:100%;max-width:1120px">
+
+                                            <!-- Classe Modal -->
+                                              <div id="myModal6" class="modal6">
+            
+                                            <!-- Botão de fecho -->
+                                           <span class="close6">&times;</span>
+            
+                                          <!-- Imagem dentro do modal -->
+                                          <img class="modal-content6" id="img06">
+            
+                                          <!-- Legenda da imagem -->
+                                         <div id="caption6"></div>
+                                          </div>
+                                          <div class="clik">
+                                                <p class="informative2">Clique na imagem para visualizar.</p>
+                                            </div>
+                                          <p class="legenda">Neste Diagrama de Máquina de Estados podemos observar os estados gerais da próxima fase a implementar. A sua análise é 
+                                              intuitiva onde podemos observar que um utilizador ao abrir a CASE Tool terá duas opções: Registo/Login. Ao realizar o login com sucesso
+                                              irá aceder a página inicial (Dashboard) da CASE onde existirá um Menu com a opção de Visualizar ou Criar Projeto. Na Visualização de Projeto,
+                                              será possível para Líderes de projeto aceder à Alteração do mesmo. A partir do Menu podemos sair do Software.
+                                          </p>
+                                    </div>
+
+
+                                    <div class="col-12">
+                                            <h2 class="headingd">Conclusões</h2>
+                                            <div class="heading-underline"></div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                            <div class="feature">
+                                                
+                                                <p class="intro">Consequência da elaboração de todos estes Diagramas e inclusive análise dos requisitos para a criação da CASE Tool, a nossa equipa
+                                                    considera a sua implementação viável. O foco estaria em criar uma ferramenta eficiente e que permitisse criar uma gestão total do projeto
+                                                    a partir da mesma, do mais baixo ao mais alto nível. Posto isto, aguardamos por novas instruções para dar continuidade ao nosso
+                                                    trabalho.<br><br>
+                                                    Após várias reuniões chegamos ainda à conclusão que a melhor forma de criar este projeto seria utilizando HTML/CSS e Javascript, 
+                                                    não havendo assim necessidade de realizar o download do software para cada computador da empresa e permitindo realizar todo o 
+                                                    trabalho no Browser. O mesmo será acedido através da nosso Website.
+                                                </p>
+                                                    
+                                            </div>
+                                    </div>
                             </div>
                     </div>
                     
@@ -208,6 +507,120 @@
         }
       </script>
 
+<script> //Script para fazer a imagem modal funcionar
+        // obter modal
+        var modal2 = document.getElementById("myModal2");
+        
+        // Obter imagem original e colocar dentro do modal - usar atributo "alt" como legenda
+        var img2 = document.getElementById("myImg2");
+        var modalImg2 = document.getElementById("img02");
+        var captionText2 = document.getElementById("caption2");
+        img2.onclick = function(){
+          modal2.style.display = "block";
+          modalImg2.src = this.src;
+          captionText2.innerHTML = this.alt;
+        }
+        
+        // Botão de fecho
+        var span = document.getElementsByClassName("close2")[0];
+        
+        // Fechar o modal
+        span.onclick = function() {
+          modal2.style.display = "none";
+        }
+      </script>
+
+<script> //Script para fazer a imagem modal funcionar
+        // obter modal
+        var modal3 = document.getElementById("myModal3");
+        
+        // Obter imagem original e colocar dentro do modal - usar atributo "alt" como legenda
+        var img3 = document.getElementById("myImg3");
+        var modalImg3 = document.getElementById("img03");
+        var captionText3 = document.getElementById("caption3");
+        img3.onclick = function(){
+          modal3.style.display = "block";
+          modalImg3.src = this.src;
+          captionText3.innerHTML = this.alt;
+        }
+        
+        // Botão de fecho
+        var span = document.getElementsByClassName("close3")[0];
+        
+        // Fechar o modal
+        span.onclick = function() {
+          modal3.style.display = "none";
+        }
+      </script>
+
+<script> //Script para fazer a imagem modal funcionar
+        // obter modal
+        var modal4 = document.getElementById("myModal4");
+        
+        // Obter imagem original e colocar dentro do modal - usar atributo "alt" como legenda
+        var img4 = document.getElementById("myImg4");
+        var modalImg4 = document.getElementById("img04");
+        var captionText4 = document.getElementById("caption4");
+        img4.onclick = function(){
+          modal4.style.display = "block";
+          modalImg4.src = this.src;
+          captionText4.innerHTML = this.alt;
+        }
+        
+        // Botão de fecho
+        var span = document.getElementsByClassName("close4")[0];
+        
+        // Fechar o modal
+        span.onclick = function() {
+          modal4.style.display = "none";
+        }
+      </script>
+
+<script> //Script para fazer a imagem modal funcionar
+        // obter modal
+        var modal5 = document.getElementById("myModal5");
+        
+        // Obter imagem original e colocar dentro do modal - usar atributo "alt" como legenda
+        var img5 = document.getElementById("myImg5");
+        var modalImg5 = document.getElementById("img05");
+        var captionText5 = document.getElementById("caption5");
+        img5.onclick = function(){
+          modal5.style.display = "block";
+          modalImg5.src = this.src;
+          captionText5.innerHTML = this.alt;
+        }
+        
+        // Botão de fecho
+        var span = document.getElementsByClassName("close5")[0];
+        
+        // Fechar o modal
+        span.onclick = function() {
+          modal5.style.display = "none";
+        }
+      </script>
+
+<script> //Script para fazer a imagem modal funcionar
+        // obter modal
+        var modal6 = document.getElementById("myModal6");
+        
+        // Obter imagem original e colocar dentro do modal - usar atributo "alt" como legenda
+        var img6 = document.getElementById("myImg6");
+        var modalImg6 = document.getElementById("img06");
+        var captionText6 = document.getElementById("caption6");
+        img6.onclick = function(){
+          modal6.style.display = "block";
+          modalImg6.src = this.src;
+          captionText6.innerHTML = this.alt;
+        }
+        
+        // Botão de fecho
+        var span = document.getElementsByClassName("close6")[0];
+        
+        // Fechar o modal
+        span.onclick = function() {
+          modal6.style.display = "none";
+        }
+      </script>
 
 </body>
 </html>
