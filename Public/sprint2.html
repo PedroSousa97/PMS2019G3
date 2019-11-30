@@ -124,6 +124,41 @@
                                         </p>
                                     </div>
                                     </div>
+                                    
+                                    <div class="col-12">
+                                            <h2 class="headingd">Diagrama de Classes</h2>
+                                            <div class="heading-underline"></div>
+                                    </div>
+                                    <div class="col-12">            
+                                            <!-- Ativar imagem modal -->
+                                              <img id="myImg" src="img/Case Tool.png" alt="Class Diagram" style="width:100%;max-width:1800px">
+              
+                                                <!-- Classe Modal -->
+                                                  <div id="myModal" class="modal">
+              
+                                                <!-- Botão de fecho -->
+                                               <span class="close">&times;</span>
+              
+                                              <!-- Imagem dentro do modal -->
+                                              <img class="modal-content" id="img01">
+              
+                                              <!-- Legenda da imagem -->
+                                             <div id="caption"></div>
+                                          </div>
+                                          <div class="clik">
+                                                <p class="informative2">Clique na imagem para visualizar.</p>
+                                            </div>
+                                          <p class="legenda">Neste Diagrama de Classes apresentamos todas as entidades e atributos de um projeto. Alguns atributos do projeto no entanto formam
+                                              novas classes, nomeadamente as equipas, tarefas e fases do projeto. Dentro destas podemos ter mais classes associadas. Em geral,
+                                              este diagrama representa o funcionamento geral da CASE Tool e o que esta eventualmente poderá conter.
+                                          </p>
+                                    </div>
+
+                                    <div class="col-12">
+                                            <h2 class="headingd">Casos de Utilização</h2>
+                                            <div class="heading-underline"></div>
+                                    </div>
+
                             </div>
                     </div>
                     
@@ -148,6 +183,31 @@
 <!-- jQuery first, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script> //Script para fazer a imagem modal funcionar
+        // obter modal
+        var modal = document.getElementById("myModal");
+        
+        // Obter imagem original e colocar dentro do modal - usar atributo "alt" como legenda
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        // Botão de fecho
+        var span = document.getElementsByClassName("close")[0];
+        
+        // Fechar o modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+      </script>
+
 
 </body>
 </html>
