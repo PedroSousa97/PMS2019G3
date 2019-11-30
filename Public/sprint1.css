@@ -455,10 +455,10 @@ tbody tr:hover {
     content: "Dependências";
   }
   table tbody tr td:nth-child(6):before {
-    content: "Estimativas de Esforço";
+    content: "Estim. de Esforço";
   }
   table tbody tr td:nth-child(7):before {
-    content: "Estimativas de Horas";
+    content: "Estim. de Horas";
   }
   table tbody tr td:nth-child(8):before {
     content: "Esforço Real";

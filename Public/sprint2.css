@@ -88,6 +88,15 @@ h2.heading{
 .intro{
     text-align: justify;
 }
+.topicos2{
+    text-align: left;
+}
+.tarefas{
+    padding-top: 1rem ;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 /*------------Footer------------*/
 
