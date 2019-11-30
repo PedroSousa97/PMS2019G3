@@ -88,12 +88,14 @@ h2.heading{
 }
 
 .tarefas{
+    padding-top: 1rem ;
     text-align: left;
     font-weight: bold;
 }
 
 .topicos{
     text-align: left;
+    padding-bottom: 5rem;
 }
 
 /* Trigger do Modal */
@@ -210,10 +212,7 @@ h1,h2,h3,h4,h5,h6 {margin: 0px;}
 
 p {margin: 0px;}
 
-ul, li {
-	margin: 0px;
-	list-style-type: none;
-}
+
 
 
 /* ------------------------------------ */
@@ -306,6 +305,7 @@ table {
 }
 table * {
   position: relative;
+  border: 1px solid black;
 }
 table td, table th {
   padding-left: 8px;
@@ -340,6 +340,7 @@ table td.r, table th.r {
   color: #fff;
   line-height: 1.2;
   font-weight: unset;
+  text-transform: uppercase;
 }
 
 tbody tr:nth-child(even) {
