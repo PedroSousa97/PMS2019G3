@@ -409,6 +409,92 @@
                                     </div>
 
                                     <div class="col-12">
+                                        <h2 class="headingd">Gestão Temporal da Informação</h2>
+                                        <div class="heading-underline"></div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                            <div class="feature">
+                                                
+                                                <p class="intro">
+                                                    Na introdução deste Sprint referimos que a nosso ver, a mudança mais importante refere-se à Gestão Temporal da Informação. 
+                                                    Tal mudança passaria por implementar uma Bases de dados/Tabelas temporais na nossa CASE Tool.<br>
+                                                    A nosso ver faria sentido separar da restante documentação, a análise desta possibilidade, tendo em conta que é a mudança mais impactante 
+                                                    no software a criar.
+                                                    Posto isto, é importante compreender o que são bases de dados temporais, e ter uma breve noção de como funcionam.<br><br>
+                                                </p>
+                                                <h5 style="font-weight: bold; text-align: left;">O que são Bases de Dados Temporais:</h5>
+                                                <p class="intro">
+                                                    Uma base de dados temporal armazena dados relacionados a instâncias de tempo. Oferece tipos de dados temporais e armazena informações 
+                                                    relacionadas ao passado, presente e futuro. As bases de dados temporais podem ser uni-temporais, bi-temporais ou tri-temporais.<br>
+                                                    Mais especificamente, os aspectos temporais geralmente incluem <b>tempo válido</b>, <b>tempo de transação</b> ou <b>tempo de decisão</b>:<br><br></p>
+                                                    <li style="text-align: left;"><b>Tempo válido</b> é o período durante o qual um fato é verdadeiro no mundo real;</li>
+                                                    <li style="text-align: left;"><b>Tempo de transação</b> é o período durante o qual um fato armazenado no banco de dados era conhecido;</li>
+                                                    <li style="text-align: left;"><b>Tempo de decisão</b> é o período durante o qual um fato armazenado no banco de dados foi decidido como válido;</li><br><br>
+                                                <p class="intro">
+                                                    A nosso ver, uma base de dados bi-temporal é a mais adequada para a nossa CASE Tool. A sua implementação não é tão complexa como a tri-temporal,
+                                                    e é mais completa e mais eficiente relativamente à uni-temporal. Além disso tendo em conta a complexidade de implementação de uma 
+                                                    base de dados tri-temporal, e ainda as necessidades do nosso produto, achamos que uma base de dados bi-temporal é suficiente.<br>
+                                                    Este tipo de bases de dados irá permitir termos acesso a todo o historial de dados alguma vez introduzidos/alterados, pois quando é feito um update, os novos dados são introduzidos, e os anteriores guardados numa tabela temporal. 
+                                                    Sendo assim, é uma forma de obter dados do passado, pervalencendo assim toda a informação que a nossa CASE Tool deteve.
+                                                    Isto permite podermos recuperar estados prévios de tabelas, caso necessário, e permite uma melhor previsão do futuro e visualização de todos os processos 
+                                                    que ocorreram.<br><br>
+                                                </p>
+                                                <h5 style="font-weight: bold; text-align: left;">Base de Dados bi-temporal:</h5>
+                                                <p class="intro">
+                                                    Nas bases de dados bi-temporal além do momento em que as operações CRUD (Create, Read, Update, Delete) são registadas na base de dados 
+                                                    (“transaction time”), também associamos uma outra dimensão chamada “valid time” (ou “belief time”) que significa a que espaço 
+                                                    temporal é que os dados que estamos a indicar correspondem.<br><br>
+                                                </p>
+                                                <h5 style="font-weight: bold; text-align: left;">Nossa abordagem relativamente a este tema:</h5>
+                                                <p class="intro">
+                                                    Uma das questões colocadas relativamente a esta alteração, passaria por analisar qual a melhor data de implementação da mesma. Isto é, se faria mais 
+                                                    sentido implementar esta Gestão Temporal agora na fase inicial do Projeto, ou se nos últimos Sprints quando todo o software já estivesse criado.<br>
+                                                    A melhor opção destas duas, é logicamente, implementar a base de dados temporal nesta fase inicial em que nos encontramos. Migrar uma base de dados já 
+                                                    é um processo complexo e demorado, se adicionarmos o factor temporal, torna-se ainda mais complicado. Sendo assim, e tendo em conta que concordamos e 
+                                                    achamos que esta mudança é uma mais valia para o nosso projeto, a criação da base de dados temporal será feita nos próximos Srints, tendo em conta que a original ainda não estava 
+                                                    totalmente finalizada. Desta forma conseguimos aqdequar o nosso Software à base de dados em questão desde início, poupando imenso tempo e esforço com migrações de uma base de dados 
+                                                    não temporal para uma deste tipo.<br><br>
+                                                    Relativamente à sua implementação, embora seja uma tecnologia bastante recente, alguns motores de bases de dados já implementaram temporal tables. 
+                                                    Estivemos a pesquisar e encontramos uma excelente opção gratuita, o Sistema Gestor de Bases de Dados <a href="https://mariadb.org/documentation/">MariaDB</a>.
+                                                    MariaDB é um avançado substituto para o MySQL e está disponível sob os termos da licença gratuita GPL v2.<br>
+                                                    Ao optarmos por escolher um motor de base de dados com esta funcionalidade já implementada, evitamos “construir a roda”, pois o nível de esforço e complexidade de criar 
+                                                    a gestão temporal de raiz, ou seja, implementar de raiz as tabelas temporais é mais elevada. Além disso, construir de raiz está mais propício a erros relacionais, mais 
+                                                    uma razão pela qual devemos utilizar o SGBD MariaDB para alcançar a <a href="https://mariadb.com/kb/en/temporal-data-tables/">Gestão Temporal</a> desejada.<br><br>
+                                                    Uma das objeções à implementação desta tecnologia é a dependência da mesma. Uma base de dados não temporal também origina certas dependências, nomeadamente a dependência
+                                                    do SGBD inicialmente escolhido, isto é, caso fosse necessário alterar no futuro o motor de base de dados escolhido, iria ser necessário investir algum esforço 
+                                                    para migrar do SGBD original para o novo. Da mesma forma, uma base de dados temporal apresenta exatamente a mesma dependência, e tendo em conta que é uma tecnologia em 
+                                                    crescimento, no futuro surgirão mais opções de escolha de SGBD's com esta capacidade e o tempo e esforço de migração será provavelmente idêntico ao de uma base de dados 
+                                                    não temporal. Além disso os benefícios relativos à Gestão Temporal, e superioridade tecnológica e funcional destas bases de dados temporais relativamente à que originalmente 
+                                                    ponderávamos implementar, compensa o risco de dependência. 
+                                                </p>
+
+                                            </div>
+                                    </div>
+                                    <div class="col-12">
+                                         <!-- Ativar imagem modal -->
+                                         <img id="myImg6" src="img/temporal.png" alt="Temporal Database" style="width:100%;max-width:1120px">
+
+                                         <!-- Classe Modal -->
+                                           <div id="myModal6" class="modal6">
+         
+                                         <!-- Botão de fecho -->
+                                        <span class="close6">&times;</span>
+         
+                                       <!-- Imagem dentro do modal -->
+                                       <img class="modal-content6" id="img06">
+         
+                                       <!-- Legenda da imagem -->
+                                      <div id="caption6"></div>
+                                       </div>
+                                       <div class="clik">
+                                             <p class="informative2">Clique na imagem para visualizar.</p>
+                                         </div>
+                                       <p class="legenda">Nesta imagem podemos ver a representação do funcionamento de uma base de dados temporal.</p>
+                                        
+                                    </div>
+
+                                    <div class="col-12">
                                             <h2 class="headingd">Conclusões</h2>
                                             <div class="heading-underline"></div>
                                     </div>
@@ -426,7 +512,7 @@
                                                 </p>
                                                     
                                             </div>
-                                    
+                                    </div>
 
 
                                             <div class="col-12">
@@ -674,8 +760,6 @@
                                                 </div>
                                     </div>
 
-
-                                    </div>
                             </div>
                     </div>
                     
@@ -816,8 +900,7 @@
           modal5.style.display = "none";
         }
       </script>
-
-<script> //Script para fazer a imagem modal funcionar
+      <script> //Script para fazer a imagem modal funcionar
         // obter modal
         var modal6 = document.getElementById("myModal6");
         
