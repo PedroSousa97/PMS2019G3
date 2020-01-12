@@ -458,7 +458,7 @@
                                                     Relativamente à sua implementação, embora seja uma tecnologia bastante recente, alguns motores de bases de dados já implementaram temporal tables. 
                                                     Estivemos a pesquisar e encontramos uma excelente opção gratuita, o Sistema Gestor de Bases de Dados <a href="https://mariadb.org/documentation/">MariaDB</a>.
                                                     MariaDB é um avançado substituto para o MySQL e está disponível sob os termos da licença gratuita GPL v2.<br>
-                                                    Ao optarmos por escolher um motor de base de dados com esta funcionalidade já implementada, evitamos “construir a roda”, pois o nível de esforço e complexidade de criar 
+                                                    Ao optarmos por escolher um motor de base de dados com esta funcionalidade já implementada, evitamos “reinventar a roda”, pois o nível de esforço e complexidade de criar 
                                                     a gestão temporal de raiz, ou seja, implementar de raiz as tabelas temporais é mais elevada. Além disso, construir de raiz está mais propício a erros relacionais, mais 
                                                     uma razão pela qual devemos utilizar o SGBD MariaDB para alcançar a <a href="https://mariadb.com/kb/en/temporal-data-tables/">Gestão Temporal</a> desejada.<br><br>
                                                     Uma das objeções à implementação desta tecnologia é a dependência da mesma. Uma base de dados não temporal também origina certas dependências, nomeadamente a dependência
@@ -502,13 +502,14 @@
                                     <div class="col-md-12">
                                             <div class="feature">
                                                 
-                                                <p class="intro">Consequência da elaboração de todos estes Diagramas e inclusive análise dos requisitos para a criação da CASE Tool, a nossa equipa
-                                                    considera a sua implementação viável. O foco estaria em criar uma ferramenta eficiente e que permitisse criar uma gestão total do projeto
-                                                    a partir da mesma, do mais baixo ao mais alto nível. Posto isto, aguardamos por novas instruções para dar continuidade ao nosso
-                                                    trabalho.<br><br>
-                                                    Após várias reuniões chegamos ainda à conclusão que a melhor forma de criar este projeto seria utilizando HTML/CSS e Javascript, 
-                                                    não havendo assim necessidade de realizar o download do software para cada computador da empresa e permitindo realizar todo o 
-                                                    trabalho no Browser. O mesmo será acedido através da nosso Website.
+                                                <p class="intro">As alterações introduzidas neste Sprint são todas benéficas e tornam a nossa CASE Tool ainda mais eficiente.<br>
+                                                    A elaboração de novos Diagramas de UML permitiu termos um plano mais generalista do que irá ser elaborado, e permitiu ainda 
+                                                    validar o bom funcionamento e completude do Software que iremos criar.<br><br>
+                                                    A introdução da tecnologia de Gestão Temporal é algo que nos agrada. Será um desafio implementar uma tecnologia tão recente, e com a qual 
+                                                    nunca trabalhamos. A nossa área está em constante mudança, e é importante termos a capacidade de nos adaptarmos às mesmas e estar em constante 
+                                                    aprendizagem. A melhor forma de aprender é ao sairmos da nossa zona de conforto e implementarmos novas tecnologias, portanto, não só será 
+                                                    benéfico para o nosso software, como também para o crescimento pessoal de toda a equipa.<br><br>
+                                                    Iremos dar início ao nosso trabalho para alcançar a concretização deste projeto, até lá aguardamos novas instruções.<br><br>
                                                 </p>
                                                     
                                             </div>
@@ -547,211 +548,154 @@
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
+                                                                            
                                                                             <tr>
-                                                                                    <td class="column1">1.0</td>
-                                                                                    <td class="column2">Reunião com o Boss</td>
-                                                                                    <td class="column3 green">Fácil</td>
-                                                                                    <td class="column4 orange">Alta</td>
-                                                                                    <td class="column5">Sem dependências</td>
-                                                                                    <td class="column6">18/11 ou 19/11</td>
-                                                                                    <td class="column7">30MIN ou 1H</td>
-                                                                                    <td class="column8">19/11/2019</td>
-                                                                                    <td class="column9">1H</td>
-                                                                                    <td class="column10 notranslate">Pedro Sousa</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                    <td class="column1 blue">2.0</td>
+                                                                                    <td class="column1 blue">1.0</td>
                                                                                     <td class="column2 blue">Alterações no Website Original</td>
                                                                                     <td class="column3 green">Fácil</td>
                                                                                     <td class="column4 yellow">Média</td>
-                                                                                    <td class="column5">1.0/2.1/2.2/2.3</td>
-                                                                                    <td class="column6">19/11 até 19/11 (19/11 até 21/11)</td>
-                                                                                    <td class="column7 blue">7H ou 12H</td>
-                                                                                    <td class="column8">19/11 até 30/11</td>
-                                                                                    <td class="column9 blue">13H</td>
-                                                                                    <td class="column10 notranslate">Pedro Sousa / Duarte Gomes</td>
+                                                                                    <td class="column5">2.1/2.2/2.3</td>
+                                                                                    <td class="column6">18/12 até 12/01 (19/12 até 11/01)</td>
+                                                                                    <td class="column7 blue">5H ou 8H</td>
+                                                                                    <td class="column8">12/01 até 12/01</td>
+                                                                                    <td class="column9 blue">7H</td>
+                                                                                    <td class="column10 notranslate">Todos os elementos da equipa</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                    <td class="column1">2.1</td>
-                                                                                    <td class="column2">Mudança de Cores</td>
+                                                                                    <td class="column1">1.1</td>
+                                                                                    <td class="column2">Criação da nova página</td>
                                                                                     <td class="column3 green">Fácil</td>
                                                                                     <td class="column4 green">Baixa</td>
-                                                                                    <td class="column5">1.0</td>
-                                                                                    <td class="column6">19/11 até 19/11 (19/11 até 20/11)</td>
-                                                                                    <td class="column7">1H ou 2H</td>
-                                                                                    <td class="column8">19/11 até 20/11</td>
-                                                                                    <td class="column9">2H</td>
-                                                                                    <td class="column10 notranslate">Pedro Sousa / Duarte Gomes</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                    <td class="column1">2.2</td>
-                                                                                    <td class="column2">Nova Secção Processo (Timeline)</td>
-                                                                                    <td class="column3 yellow">Intermédio</td>
-                                                                                    <td class="column4 yellow">Média</td>
-                                                                                    <td class="column5">1.0</td>
-                                                                                    <td class="column6">19/11 até 19/11 (19/11 até 21/11)</td>
-                                                                                    <td class="column7">2H ou 3H</td>
-                                                                                    <td class="column8">19/11 até 22/11</td>
-                                                                                    <td class="column9">2H</td>
-                                                                                    <td class="column10 notranslate">Pedro Sousa</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                    <td class="column1">2.3</td>
-                                                                                    <td class="column2 ">Novas páginas para Sprints</td>
-                                                                                    <td class="column3 yellow">Intermédio</td>
-                                                                                    <td class="column4 yellow">Média</td>
-                                                                                    <td class="column5">2.2/3.0</td>
-                                                                                    <td class="column6">19/11 até 19/11 (19/11 até 21/11)</td>
-                                                                                    <td class="column7">3H ou 4H</td>
-                                                                                    <td class="column8">28/11 até 30/11</td>
-                                                                                    <td class="column9">8H</td>
-                                                                                    <td class="column10 notranslate">Pedro Sousa</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                    <td class="column1">2.4</td>
-                                                                                    <td class="column2 notranslate">Loading Screen</td>
-                                                                                    <td class="column3 yellow">Intermédio</td>
-                                                                                    <td class="column4 green">Baixa</td>
-                                                                                    <td class="column5">2.0</td>
-                                                                                    <td class="column6">19/11 até 19/11 (19/11 até 20/11)</td>
-                                                                                    <td class="column7">1H ou 2H</td>
-                                                                                    <td class="column8">19/11</td>
+                                                                                    <td class="column5">Sem dependências</td>
+                                                                                    <td class="column6">18/12 até 18/12 (18/12 até 20/12)</td>
+                                                                                    <td class="column7">1H ou 1H30</td>
+                                                                                    <td class="column8">12/01 até 12/01</td>
                                                                                     <td class="column9">1H</td>
-                                                                                    <td class="column10 notranslate">Pedro Sousa</td>
+                                                                                    <td class="column10 notranslate">Todos os elementos da equipa</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                    <td class="column1 blue">3.0</td>
+                                                                                    <td class="column1">1.2</td>
+                                                                                    <td class="column2">Upload de Conteúdos</td>
+                                                                                    <td class="column3 green">Fácil</td>
+                                                                                    <td class="column4 yellow">Média</td>
+                                                                                    <td class="column5">2.0/3.0</td>
+                                                                                    <td class="column6">18/12 até 12/12 (18/01 até 11/01)</td>
+                                                                                    <td class="column7">2H ou 3H</td>
+                                                                                    <td class="column8">12/01 até 12/01</td>
+                                                                                    <td class="column9">6H</td>
+                                                                                    <td class="column10 notranslate">Todos os elementos da equipa</td>
+                                                                            </tr>
+                                                                            
+                                                                            <tr>
+                                                                                    <td class="column1 blue">2.0</td>
                                                                                     <td class="column2 blue">Criação dos Modelos UML</td>
                                                                                     <td class="column3 yellow">Intermédio</td>
                                                                                     <td class="column4 orange">Alta</td>
-                                                                                    <td class="column5">1.0</td>
-                                                                                    <td class="column6">25/11 até 26/11 (25/11 até 28/11)</td>
-                                                                                    <td class="column7 blue">7H ou 11H</td>
-                                                                                    <td class="column8">29/11</td>
-                                                                                    <td class="column9 blue">12H</td>
+                                                                                    <td class="column5">2.1/2.2/2.3</td>
+                                                                                    <td class="column6">18/01 até 19/01 (18/01 até 20/01)</td>
+                                                                                    <td class="column7 blue">8H ou 13H</td>
+                                                                                    <td class="column8">11/01 até 12/01</td>
+                                                                                    <td class="column9 blue">13H</td>
                                                                                     <td class="column10">Todos os elementos da equipa</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                    <td class="column1 blue">3.1</td>
+                                                                                    <td class="column1 blue">2.1</td>
                                                                                     <td class="column2 blue">Diagrama de Classes</td>
                                                                                     <td class="column3 orange">Difícil</td>
                                                                                     <td class="column4 orange">Alta</td>
-                                                                                    <td class="column5">1.0</td>
-                                                                                    <td class="column6">25/11 até 26/11 (25/11 até 28/11)</td>
+                                                                                    <td class="column5">Sem dependências</td>
+                                                                                    <td class="column6">18/01 até 19/01 (18/01 até 20/01)</td>
                                                                                     <td class="column7 blue">2H ou 3H</td>
-                                                                                    <td class="column8">29/11</td>
-                                                                                    <td class="column9 blue">3H30</td>
-                                                                                    <td class="column10 notranslate">Luís Miguel</td>
+                                                                                    <td class="column8">11/01 até 11/01</td>
+                                                                                    <td class="column9 blue">4H</td>
+                                                                                    <td class="column10 notranslate">Todos os elementos da equipa</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                    <td class="column1">3.2</td>
-                                                                                    <td class="column2">Diagrama de Sequência</td>
+                                                                                    <td class="column1">2.2</td>
+                                                                                    <td class="column2">Diagramas Máquina de Estados</td>
                                                                                     <td class="column3 yellow">Intermédio</td>
                                                                                     <td class="column4 orange">Alta</td>
-                                                                                    <td class="column5">1.0/3.3</td>
-                                                                                    <td class="column6">25/11 até 26/11 (25/11 até 28/11)</td>
+                                                                                    <td class="column5">Sem dependências</td>
+                                                                                    <td class="column6">18/01 até 19/01 (18/01 até 20/01)</td>
                                                                                     <td class="column7">1H ou 2H</td>
-                                                                                    <td class="column8">29/11</td>
-                                                                                    <td class="column9">2H</td>
-                                                                                    <td class="column10 notranslate">Duarte Gomes</td>
+                                                                                    <td class="column8">12/01 até 12/01</td>
+                                                                                    <td class="column9">5H</td>
+                                                                                    <td class="column10 notranslate">Todos os elementos da equipa</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                    <td class="column1">3.3</td>
+                                                                                    <td class="column1">2.3</td>
                                                                                     <td class="column2">Casos de Utilização</td>
                                                                                     <td class="column3 yellow">Intermédio</td>
                                                                                     <td class="column4 orange">Alta</td>
-                                                                                    <td class="column5">1.0</td>
-                                                                                    <td class="column6">25/11 até 26/11 (25/11 até 28/11)</td>
+                                                                                    <td class="column5">Sem dependências</td>
+                                                                                    <td class="column6">18/01 até 19/01 (18/01 até 20/01)</td>
                                                                                     <td class="column7">2H ou 3H</td>
-                                                                                    <td class="column8">29/11</td>
-                                                                                    <td class="column9">2H30</td>
-                                                                                    <td class="column10 notranslate">Cristóvão Gouveia / Nelson Graça</td>
+                                                                                    <td class="column8">12/01 até 12/01</td>
+                                                                                    <td class="column9">4H</td>
+                                                                                    <td class="column10 notranslate">Todos os elementos da equipa</td>
+                                                                            </tr>
+                                                                            
+                                                                            <tr>
+                                                                                <td class="column1 blue">3.0</td>
+                                                                                <td class="column2 blue">Gestão Temporal da Informação</td>
+                                                                                <td class="column3 yellow">Intermédio</td>
+                                                                                <td class="column4 orange">Alta</td>
+                                                                                <td class="column5">Sem dependências</td>
+                                                                                <td class="column6">18/12 até 12/01 (18/12 até 20/12)</td>
+                                                                                <td class="column7 blue">4H ou 5H</td>
+                                                                                <td class="column8">10/01 até 12/01</td>
+                                                                                <td class="column9 blue">6H</td>
+                                                                                <td class="column10 notranslate">Todos os elementos da equipa</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                    <td class="column1">3.4</td>
-                                                                                    <td class="column2">Diagrama Casos de Utilização</td>
-                                                                                    <td class="column3 green">Fácil</td>
-                                                                                    <td class="column4 orange">Alta</td>
-                                                                                    <td class="column5">1.0/3.3</td>
-                                                                                    <td class="column6">25/11 até 26/11 (25/11 até 28/11)</td>
-                                                                                    <td class="column7">1H ou 1H30</td>
-                                                                                    <td class="column8">29/11</td>
-                                                                                    <td class="column9">1H</td>
-                                                                                    <td class="column10 notranslate">Cristóvão Gouveia / Nelson Graça</td>
+                                                                                <td class="column1">3.1</td>
+                                                                                <td class="column2">Pesquisa</td>
+                                                                                <td class="column3 green">Fácil</td>
+                                                                                <td class="column4 yellow">Média</td>
+                                                                                <td class="column5">Sem dependências</td>
+                                                                                <td class="column6">18/12 até 12/01 (18/12 até 18/12)</td>
+                                                                                <td class="column7">1H ou 2H</td>
+                                                                                <td class="column8">10/01 até 11/01</td>
+                                                                                <td class="column9">2H</td>
+                                                                                <td class="column10 notranslate">Todos os elementos da equipa</td>
                                                                             </tr>
                                                                             <tr>
-                                                                                    <td class="column1">3.5</td>
-                                                                                    <td class="column2">Diagrama Máquina de Estados</td>
-                                                                                    <td class="column3 yellow">Intermédio</td>
-                                                                                    <td class="column4 orange">Alta</td>
-                                                                                    <td class="column5">1.0/3.3</td>
-                                                                                    <td class="column6">25/11 até 26/11 (25/11 até 28/11)</td>
-                                                                                    <td class="column7">1H ou 1H30</td>
-                                                                                    <td class="column8">29/11</td>
-                                                                                    <td class="column9">1H</td>
-                                                                                    <td class="column10 notranslate">Cristóvão Gouveia / Pedro Sousa</td>
+                                                                                <td class="column1">3.2</td>
+                                                                                <td class="column2">Análise de Opções</td>
+                                                                                <td class="column3 green">Fácil</td>
+                                                                                <td class="column4 yellow">Média</td>
+                                                                                <td class="column5">Sem dependências</td>
+                                                                                <td class="column6">18/12 até 12/01 (18/12 até 20/12)</td>
+                                                                                <td class="column7">1H ou 2H</td>
+                                                                                <td class="column8">11/01 até 11/01</td>
+                                                                                <td class="column9">2H</td>
+                                                                                <td class="column10 notranslate">Todos os elementos da equipa</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="column1">3.3</td>
+                                                                                <td class="column2">Conclusões gerais</td>
+                                                                                <td class="column3 green">Fácil</td>
+                                                                                <td class="column4 yellow">Média</td>
+                                                                                <td class="column5">Sem dependências</td>
+                                                                                <td class="column6">18/12 até 12/01 (18/12 até 20/12)</td>
+                                                                                <td class="column7">1H ou 2H</td>
+                                                                                <td class="column8">11/01 até 11/01</td>
+                                                                                <td class="column9">2H</td>
+                                                                                <td class="column10 notranslate">Todos os elementos da equipa</td>
                                                                             </tr>
                                                                             <tr>
                                                                                 <td class="column1 blue">4.0</td>
-                                                                                <td class="column2 blue">Design de novos conteúdos</td>
-                                                                                <td class="column3 yellow">Intermédio</td>
-                                                                                <td class="column4 yellow">Média</td>
-                                                                                <td class="column5">2.3/2.2</td>
-                                                                                <td class="column6">19/11 até 20/11 (21/11 até 22/11)</td>
-                                                                                <td class="column7 blue">2H ou 3H</td>
-                                                                                <td class="column8">22/11 até 30/11</td>
-                                                                                <td class="column9 blue">3H</td>
-                                                                                <td class="column10 notranslate">Cristóvão Gouveia / Nelson Graça</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="column1">4.1</td>
-                                                                                <td class="column2">Novas Montagens</td>
-                                                                                <td class="column3 green">Fácil</td>
-                                                                                <td class="column4 green">Baixa</td>
-                                                                                <td class="column5">2.0</td>
-                                                                                <td class="column6">19/11 até 20/11 (21/11 até 22/11)</td>
-                                                                                <td class="column7">1H ou 2H</td>
-                                                                                <td class="column8">22/11 até 30/11</td>
-                                                                                <td class="column9">1H30H</td>
-                                                                                <td class="column10 notranslate">Cristóvão Gouveia / Nelson Graça</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="column1">4.2</td>
-                                                                                <td class="column2">Botões e outros atributos</td>
-                                                                                <td class="column3 green">Fácil</td>
-                                                                                <td class="column4 green">Baixa</td>
-                                                                                <td class="column5">2.0</td>
-                                                                                <td class="column6">19/11 até 20/11 (21/11 até 22/11)</td>
-                                                                                <td class="column7">1H ou 2H</td>
-                                                                                <td class="column8">22/11 até 30/11</td>
-                                                                                <td class="column9">1H30H</td>
-                                                                                <td class="column10 notranslate">Cristóvão Gouveia / Nelson Graça</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="column1 blue">5.0</td>
                                                                                 <td class="column2 blue">Últimas verificações e correções</td>
                                                                                 <td class="column3 green">Fácil</td>
                                                                                 <td class="column4 orange">Alta</td>
                                                                                 <td class="column5">Todas as anteriores</td>
-                                                                                <td class="column6">29/11 ou 30/11</td>
+                                                                                <td class="column6">11/01 ou 12/01</td>
                                                                                 <td class="column7 blue">1H ou 2H</td>
-                                                                                <td class="column8">30/11</td>
-                                                                                <td class="column9 blue">1H</td>
+                                                                                <td class="column8">12/01</td>
+                                                                                <td class="column9 blue">2H</td>
                                                                                 <td class="column10">Todos os elementos da equipa</td>
                                                                             </tr>
-                                                                            <tr>
-                                                                                <td class="column1">------------</td>
-                                                                                <td class="column2">Tarefa adicional de gestão de projeto</td>
-                                                                                <td class="column3 yellow">Intermédio</td>
-                                                                                <td class="column4 orange">Alta</td>
-                                                                                <td class="column5">Todas as outras tarefas</td>
-                                                                                <td class="column6">19/11 até 29/11 (19/11 até 30/11)</td>
-                                                                                <td class="column7">17H30 ou 29H</td>
-                                                                                <td class="column8">19/11 até 30/11</td>
-                                                                                <td class="column9">30H</td>
-                                                                                <td class="column10 notranslate">Luís Miguel</td>
-                                                                            </tr>
-                                                                                                                                                       
+                                                                                                                                              
                                                                     </tbody>
                                                                 </table>
                                                             </div>
