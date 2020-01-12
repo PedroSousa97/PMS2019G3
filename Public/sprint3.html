@@ -66,7 +66,7 @@
                                 <a class="nav-link notranslate" href="sprint1.html">Sprint 1</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link notranslate" href="sprint3.html">Sprint 3</a>
+                            <a class="nav-link notranslate" href="sprint2.html">Sprint 2</a>
                         </li>
                     </ul>
                 </div>
@@ -77,53 +77,37 @@
             <div class="jumbotron">
                         <div class="narrow text-center" >
                             <div class="col-12">
-                                <h2 class="heading notranslate">Sprint 2</h2>
+                                <h2 class="heading notranslate">Sprint 3</h2>
                                 <div class="heading-underline"></div>
                             </div>
                             <div class="row">
                                     <div class="col-md-12">
                                     <div class="feature">
                                         <h3>Introdução</h3>
-                                        <p class="intro">A nossa empresa recebeu informação relativamente ao próximo projeto no qual vamos trabalhar, sendo o mesmo, a 
-                                            criação de uma "CASE Tool" (Computer Aided Software Engineering Tool) para uso interno na nossa empresa. Uma Case Tool ajuda no desenvolvimento
-                                            de projetos de software. Pode ser visto como uma "Project Management Framework".<br>
-                                            Sucintamente, este software tem como principais funcionalidades:
-                                        </p>
+                                        <p class="intro">Consequência de uma conferência internacional no Dubai, foi-nos proposto efetuar algumas mudanças na CASE Tool a implementar. 
+                                            Sumariamente deixarão de existir Fases de Projeto, passando as Tarefas a estar diretamente ligadas ao mesmo. Sendo assim, os casos
+                                            de utilização anteriormente associados a Fases, passam a corresponder às Tarefas. Também podemos agora agrupar as Tarefas por Templates, 
+                                            que correspondem a blocos de tarefas que pertencem a funcionalidades idênticas, ou que estão interligadas num determinado projeto.<br>
+                                            Além destas alterações, será introduzida a Gestão de Qualidade dos Projetos, que tem como função avaliar e corrigir Defects que possam surgir.<br>
+                                            A nosso ver, a mudança mais importante refere-se à Gestão Temporal da Informação, onde nos é proposto analisar e concluir se é benéfico implementar 
+                                            Bases de dados/Tabelas temporais na nossa CASE Tool. A análise passa por responder a questões como:</p>
                                             <ul class="topicos2">
-                                                <li>Registo e Login dos colaboradores da nossa empresa;</li>
-                                                <li>Criação e gestão de Projetos;</li>
-                                                <li>Associar todas as entidades envolvidas nos mesmos;</li>
-                                                <li>Gestão de Esforço e Custos;</li>
-                                                <li>Criação de Fases de Projetos e associar atributos e entidades envolvidas;</li>
-                                                <li>Criação de Tarefas de cada Fase e associar atributos e entidades envolvidas;</li>
-                                                <li>Criação de diversos Canais de Comunicaçaõ e Gestão de Acessos a estes;</li>
-                                                    <ul>
-                                                        <li>Partilha e visualização de mensagens, associar feedback e ainda referenciar conteúdos;</li>
-                                                    </ul>
+                                                <li>Quando devemos implementar?</li>
+                                                <li>Como fazê-lo?</li>
+                                                <li>Construir os mecanismos sobre as bases de dados existentes ou utilizar um dos poucos 
+                                                    motores de bases de dados que já suportam as tabelas temporais?</li>
+                                                <li>As soluções implementadas são boas?</li>
+                                                <li>Queremos ficar dependentes de uma tecnologia?</li>
+                                                <li>É demasiado esforço “construir a roda” implementando de raiz a gestão temporal?</li>
                                             </ul>
-                                        <p class="intro">Posto isto, o foco desta entrega é analisar a viabilidade, modelar em UML de parte, ou de todos,
-                                            os requisitos da ferramenta CASE a desenvolver e planear a implementação deste projeto. Os elementos essenciais a apresentar são: 
+                                        <p class="intro">Todas estas questões e problemas serão respondidas ao longo deste Sprint.<br>
+                                        Posto isto, o foco desta entrega é modelar novos UML, tendo em conta os novos requisitos, e avaliar a viabilidade do uso de Bases de Dados Temporais 
+                                        na nossa CASE Tool. Os diagramas essenciais a apresentar são: 
                                             <ul class="topicos2">
                                                     <li>Diagrama de classes;</li>
                                                     <li>Casos de utilização (use cases);</li>
                                                     <li>Diagrama de máquina de estados;</li>
-                                                    <li>Diagrama de Sequência;</li>
                                             </ul>
-                                        </p>
-                                        <p class="intro">É importante referir que a nossa equipa optou por implementar este projeto utilizando uma abordagem incremental.
-                                            Este método permite-nos planear cada fase com um nível de detalhe mais elevado do que uma abordagem clássica com "big design upfront".
-                                            Além disso, é mais flexível e menos dispendioso para alterar o âmbito e os requisitos projeto, mais fácil de testar cada implementação e 
-                                            tornando-se assim mais fácil de gerir os riscos.
-                                        </p>
-                                        <h5 class="tarefas">*Nota:</h5>
-                                        <p class="intro">Uma forma eficaz de solucionar problemas em qualquer projeto, 
-                                                é encontrar uma solução comprada OTS (off the shelf) que contenha a totalidade (ou parte
-                                                substancial) dos requisitos apresentados. Sendo assim, tendo em conta o custo e complexidade de implementação dos canais de comunicação,
-                                                a nossa equipa encontrou uma ferramenta externa para tal efeito. Os canais de comunicação a nosso ver, são uma funcionalidade
-                                                complementar e não essencial da CASE Tool a desenvolver, não se justificando então o tempo que seria despendido para criar a mesma.<br><br>
-                                                Posto isto a nossa equipa apresenta como solução o software gratuito NodeBB. Um fórum de última geração e mobile-ready que contém todas as
-                                                funcionalidades requesitadas para o nosso projeto, e que posteriormente será integrado com a base de dados da nossa CASE Tool.<br>
-                                                Para mais informações relativamente a este software visitar o website <a href="https://nodebb.org/">https://nodebb.org/</a>.
                                         </p>
                                     </div>
                                     </div>
@@ -134,7 +118,7 @@
                                     </div>
                                     <div class="col-12">            
                                             <!-- Ativar imagem modal -->
-                                              <img id="myImg" src="img/Case Tool.png" alt="Class Diagram" style="width:100%;max-width:1800px">
+                                              <img id="myImg" src="img/fasdfafsdf.png" alt="Class Diagram" style="width:100%;max-width:1800px">
               
                                                 <!-- Classe Modal -->
                                                   <div id="myModal" class="modal">
@@ -151,9 +135,9 @@
                                           <div class="clik">
                                                 <p class="informative2">Clique na imagem para visualizar.</p>
                                             </div>
-                                          <p class="legenda">Neste Diagrama de Classes apresentamos todas as entidades envolvidas e atributos de um projeto. Alguns atributos do projeto no entanto formam
-                                              novas classes, nomeadamente as equipas, tarefas e fases do projeto. Dentro destas podemos ter mais classes associadas. Em geral,
-                                              este diagrama representa o funcionamento geral da CASE Tool e o que esta eventualmente poderá conter.
+                                          <p class="legenda">Neste Diagrama de Classes, tal como no do Sprint anterior, apresentamos todas as entidades envolvidas e atributos de um projeto.
+                                              Foi tido em conta o feedback da entrega anterior e corrigido os seus problemas, nomeadamente as relações fortes, que em alguns casos não faziam sentido.
+                                              Foi ainda adicionado a parte de Gestão de Qualidade (Defect) e eliminadas as Fases do Projeto. Em geral, este diagrama representa o funcionamento geral da CASE Tool.
                                           </p>
                                     </div>
 
@@ -163,10 +147,12 @@
                                     </div>
                                     <div class="col-md-12">
                                             <div class="feature">
-                                                <p class="intro">Após a leitura e análise dos requisitos para a criação da CASE Tool, criamos uma visão do que será o nosso produto final e 
-                                                    extraímos os seguintes casos de utilização:</p>
+                                                <p class="intro">Tendo em conta que os requisitos referentes aos canais de comunicação não se alteraram, os casos de utilização para 
+                                                    esta parte do projeto mantêm-se iguais aos do Sprint <a href="sprint2.html#target">anterior</a>.<br>Após a leitura e análise dos 
+                                                    requisitos para as alterações a efetuar na nossa Case Tool, criamos uma visão do que será o nosso produto final e 
+                                                    extraímos os seguintes casos de utilização para este Sprint:</p>
                                                     <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-12">
                                                     <ul class="topicos2">
                                                             <li>Realizar Registo;</li>
                                                             <li>Efetuar Login;</li>
@@ -199,27 +185,22 @@
                                                             <li>Visualizar dados do Projeto;</li>
                                                             <li>Alterar dados do Projeto;</li>
                                                                 <ul class="topicos2">
-                                                                    <li>Dados de Fase;</li>
                                                                     <li>Dados de Equipa;</li>
                                                                     <li>Dados de Tarefas;</li>
                                                                 </ul>
-                                                            <li>Criar Fases;</li>
-                                                                <ul class="topicos2">
-                                                                    <li>Associar Equipa Interna;</li>
-                                                                        <ul class="topicos2">
-                                                                            <li>Classificar Associações;</li>
-                                                                        </ul>
-                                                                    <li>Associar Designação;</li>
-                                                                    <li>Associar Data de Início e de Conclusão;</li>
-                                                                    <li>Associar Representantes do Cliente;</li>
-                                                                </ul>
                                                     </ul>
+                                                    <p class="intro">Os Casos de Utilização selecionados para a última entrega não são influenciados pelas novas mudanças, sendo assim 
+                                                        a nossa equipa irá modelar todos os restantes. Os casos de Utilização a modelar neste Sprint são os seguintes:</p>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-12">
                                                         <ul class="topicos2">
                                                                 <li>Criar Tarefas;</li>
                                                                     <ul class="topicos2">
                                                                         <li>Criar Perfil da Tarefa;</li>
+                                                                        <li>Associar Equipa Interna;</li>
+                                                                        <ul class="topicos2">
+                                                                            <li>Classificar Associações;</li>
+                                                                        </ul>
                                                                         <li>Criar Dependências;</li>
                                                                         <li>Associar Estado da Tarefa;</li>
                                                                         <li>Adicionar comentários hierárquicos;</li>
@@ -244,7 +225,7 @@
                                                                         <li>Associar Método do Caminho Crítico;</li>
                                                                         <li>Associar Data/Hora Específica;</li>
                                                                     </ul>
-                                                                <li><a id="target">Associar Tarefas a Fase;</a></li>
+                                                                <li>Associar Tarefas a Fase;</li>
                                                                 <li>Criar Lista de Recursos Associados;</li>
                                                                     <ul class="topicos2">
                                                                         <li>Associar Unidades a Consumir;</li>
@@ -255,57 +236,58 @@
                                                                         <li>Visualizar Estimativa Atual da Tarefa;</li>
                                                                     </ul>
                                                                 <li>Associar Milestone/Deadline;</li>
+                                                                <li>Alterar dados da Tarefa;</li>
+                                                                <li>Visualizar dados da Tarefa</li>
+                                                                <li>Criar Templates;</li>
+                                                                    <ul class="topicos2">
+                                                                        <li>Agrupar tarefas por Template;</li>
+                                                                    </ul>
                                                         </ul>
                                                     </div>
                                             </div>
 
                                             <div class="row">
-                                                    <p>Tendo em conta que iremos usar uma solução comprada OTS (off the shelf) para o Canal de comunicação, 
-                                                            apresentamos os casos de utilização em separado, e estes em geral são os seguintes:</a>
+                                                    <p>Tendo em conta que a Gestão de Qualidade foi introduzida neste Sprint, decidimos apresentar os casos de utilização em separado, 
+                                                        e estes em geral são os seguintes:
                                                          </p>
                                                     <div class="col-md-6">
                                                     <ul class="topicos2">
-                                                            <li>Criar Canal de Comunicação;</li>
+                                                            <li>Criar Defects;</li>
                                                                 <ul class="topicos2">
-                                                                    <li>Associar ao Nível do Projeto;</li>
-                                                                    <li>Associar ao Nível da Fase;</li>
-                                                                    <li>Associar ao Nível da Tarefa;</li>
+                                                                    <li>Criar Perfil do Defect (Título, Data de Abertura, Checkbox cliente e Tipo de Defect);</li>
+                                                                    <li>Associar condições específicas do quem detetou o defect;</li>
+                                                                    <li>Associar caso de uso que torna o erro reproduzível (se possível);</li>
+                                                                    <li>Criar ficheiros que mostram o erro (imagens, outputs ou vídeos de screen cast);</li>
+                                                                    <li>Associar pessoa para ficar responsável de avaliar o defect;</li>
+                                                                    <li>Criar tarefa de avaliação de defect;</li>
+                                                                    <li>Referenciar a(s) tarefa(s) de avaliação deste Defect;</li>
+                                                                    <li>Associar pessoa para ficar responsável pela correção do defect;</li>
+                                                                    <li>Criar tarefa de Correção do defect;</li>
+                                                                    <li>Referenciar para a(s) tarefas(s) de correção deste Defect;</li>
+                                                                    <li>Associar outro a defect similar;</li>
                                                                 </ul>
-                                                            <li>Partilhar Mensagens;</li>
-                                                            <li>Visualizar Mensagens;</li>
-                                                            <li>Referenciar Notícias;</li>
-                                                            <li>Referenciar Standards;</li>
-                                                            <li>Referenciar Leis;</li>
-                                                            <li>Associar Feedback a Mensagens;</li>
+                                                            <li>Visualizar dados do Defect;</li>
+                                                            <li>Alterar dados do Defect;</li>
+                                                            <li>Criar data de Resolução;</li>
+                                                            
                                                     </ul>
                                                 </div>
                                             </div>
                                     </div>
-                                            <p class="intro">De todos os Casos de Utilização acima apresentados, a nossa equipa decidiu selecionar aqueles que achava que eram mais relevantes
-                                                para a primeira implementação. Os casos de Utilização escolhidos foram os seguintes:
-                                            </p>
-                                            <ul class="topicos2">
-                                                <li>Realizar Registo;</li>
-                                                <li>Efetuar Login;</li>
-                                                <li>Criar Projeto;</li>
-                                                <li>Criar Perfil do Projeto;</li>
-                                                <li>Associar Sponsor;</li>
-                                                <li>Associar Pessoas (clientes/utilizadores);</li>
-                                                <li>Visualizar dados do Projeto;</li>
-                                                <li>Alterar dados do Projeto;</li>
-                                            </ul>
-                                            <p class="intro">Os seguintes diagramas focam-se apenas nestes Casos de Utilização que foram selecionados para serem implementados na próxima fase.
+                                            <p class="intro">Relembramos que de todos os Casos de Utilização acima apresentados, a nossa equipa decidiu selecionar aqueles que ainda não 
+                                                tinham sido abordados no Sprint anterior. Sendo assim, os Diagramas que se seguem focam-se apenas nestes Casos de Utilização, nomeadamente 
+                                                casos de utilização de Tarefas e Defects.
                                             </p>
                                     </div>
 
 
                                     <div class="col-12">
-                                            <h2 class="headingd">Diagrama de Casos de Utilização</h2>
+                                            <h2 class="headingd">Diagrama de Casos de Utilização<br>(Tarefa)</h2>
                                             <div class="heading-underline"></div>
                                     </div>
                                     <div class="col-12">            
                                             <!-- Ativar imagem modal -->
-                                            <img id="myImg2" src="img/UC.png" alt="Use Case Diagram" style="width:100%;max-width:800px">
+                                            <img id="myImg2" src="img/UC.Tarefa.png" alt="Use Case Diagram Tasks" style="width:100%;max-width:800px">
 
                                             <!-- Classe Modal -->
                                               <div id="myModal2" class="modal2">
@@ -322,20 +304,23 @@
                                           <div class="clik">
                                                 <p class="informative2">Clique na imagem para visualizar.</p>
                                             </div>
-                                          <p class="legenda">Neste Diagrama de Casos de Utilização apresentamos as possíveis ações dos utilizadores da nossa CASE Tool, mas apenas do que será
-                                              implementado para a próxima fase. O Diagrama é intuitivo e de fácil compreensão. Todos os Funcionário realizaraõ um Registo inicial de conta,
-                                              e posteriormente o Login. Para os Funcionários que não sejam Líderes de Projeto apenas poderaõ visualizar dados de Projetos. Todas as outras ações 
-                                              estão reservadas para o Líder de Projeto.
+                                          <p class="legenda">Neste Diagrama de Casos de Utilização apresentamos as possíveis ações dos utilizadores para a secção de Tarefas da CASE Tool. Podemos observar 
+                                              que o gestor de Projeto tem a seu encargo toda a criação da Tarefa e dados associados. No entanto, os implementadores são os responsáveis pelo gestão do risco, 
+                                              e são estes que preencherão os dados dos riscos existentes, nomeadamente publicar planos de mitigação de risco, realizar e publicar avaliação de risco e 
+                                              criar lista de riscos e seus atributos. Além disto, qualquer funcionário ou entidade participante da Tarefa, pode adicionar estimativas de esforço da tarefa.<br>
+                                              Apenas o gestor de Projeto pode alterar dados de Tarefa e criar Templates, já a visualização de dados de tarefa pode ser efetuada por qualquer funcionário ou 
+                                              entidade participante da Tarefa.
+                                              
                                           </p>
                                     </div>
 
                                     <div class="col-12">
-                                            <h2 class="headingd">Diagramas de Sequência</h2>
+                                            <h2 class="headingd">Diagrama de Casos de Utilização<br>(Defect)</h2>
                                             <div class="heading-underline"></div>
                                     </div>
                                     <div class="col-12">            
                                             <!-- Ativar imagem modal -->
-                                            <img id="myImg4" src="img/Registo.png" alt="Registration Sequence Diagram" style="width:100%;max-width:800px">
+                                            <img id="myImg4" src="img/UC.Defect.png" alt="Use Case Diagram Defect" style="width:100%;max-width:800px">
 
                                             <!-- Classe Modal -->
                                               <div id="myModal4" class="modal4">
@@ -352,15 +337,20 @@
                                           <div class="clik">
                                                 <p class="informative2">Clique na imagem para visualizar.</p>
                                             </div>
-                                          <p class="legenda">Diagrama de Sequência de Registo: Neste diagrama apresentamos a sequência do processo de Registo, onde o utilizador
-                                              insere os dados de registo, é feita uma verificação dos dados em server-side, depois são enviados os dados para a base de dados,
-                                              onde será verificado se já existem dados iguais ou não. Se existir dá origem a erro e informa o utilizador para utlizar outros dados.
-                                              Se os dados forem corretos e inexistentes, o utilizador é registado e redirecionado para a página principal (Dashboard) da CASE Tool.
+                                          <p class="legenda">Neste Diagrama de Casos de Utilização apresentamos as possíveis ações dos utilizadores para a criação de um Defect na CASE Tool. Podemos observar 
+                                            que os Defects e dados associados podem ser criados por qualquer funcionário/entidade que o detete. Os dados de um Defect podem ser alterados, 
+                                            além disso, após o resultado da Avaliaçã/Correção do mesmo pode ser alterado/introduzida a data de resolução por parte de quem o resolveu.<br>
+                                            Cabe ao gestor de Projeto, após a criação de um Defect, associar responsáveis para a avaliação e correção do mesmo, bom como criar tarefas para estas duas medidas de ação. 
+                                            As tarefas de avaliação e correção são posteriormente referenciadas.
                                           </p>
+                                    </div>
+                                    <div class="col-12">
+                                        <h2 class="headingd">Diagrama de Máquina de Estados<br>(Tarefa)</h2>
+                                        <div class="heading-underline"></div>
                                     </div>
                                     <div class="col-12">            
                                             <!-- Ativar imagem modal -->
-                                            <img id="myImg3" src="img/Login.png" alt="Login Sequence Diagram" style="width:100%;max-width:800px">
+                                            <img id="myImg3" src="img/maquinaestadostarefa.png" alt="Tasks State Machine Diagram" style="width:100%;max-width:800px">
 
                                             <!-- Classe Modal -->
                                               <div id="myModal3" class="modal3">
@@ -377,15 +367,20 @@
                                           <div class="clik">
                                                 <p class="informative2">Clique na imagem para visualizar.</p>
                                             </div>
-                                          <p class="legenda">Diagrama de Sequência de Login: Neste diagrama apresentamos a sequência do processo de Login, onde o utilizador
-                                              insere a pass e username, é realizada a função de hash no servidor para desencriptar a password e posteriormente os dados desencriptados
-                                              são verificados. Se estiverem corretos avança para a página principal (Dashboard) da CASE Tool, caso contrário apresenta mensagem de erro 
-                                              de conexão.
+                                          <p class="legenda">Neste Diagrama de Máquina de Estados podemos observar os estados gerais da Tarefa. A sua análise é 
+                                            intuitiva onde podemos observar que é Criada uma Tarefa quando os seus dados são preenchidos corretamente e sem ocorrência de erros. 
+                                            Após ter um tarefa criada, podemos visualizar os seus dados, em caso de não os alterarmos saímos da mesma, caso contrário é realizada a 
+                                            alteração. Após a alteração com sucesso podemos sair da Tarefa ou voltar a editá-la. Na visualização de Tarefa podemos ainda criar ou 
+                                            associar a mesma a templates, caso seja oportuno.
                                           </p>
+                                    </div>
+                                    <div class="col-12">
+                                        <h2 class="headingd">Diagrama de Máquina de Estados<br>(Defect)</h2>
+                                        <div class="heading-underline"></div>
                                     </div>
                                     <div class="col-12">            
                                             <!-- Ativar imagem modal -->
-                                            <img id="myImg5" src="img/Projeto.png" alt="Project Sequence Diagram" style="width:100%;max-width:800px">
+                                            <img id="myImg5" src="img/maquinaestadosdefect.png" alt="Defect State Machine Diagram" style="width:100%;max-width:800px">
 
                                             <!-- Classe Modal -->
                                               <div id="myModal5" class="modal5">
@@ -402,45 +397,16 @@
                                           <div class="clik">
                                                 <p class="informative2">Clique na imagem para visualizar.</p>
                                             </div>
-                                          <p class="legenda">Diagrama de Sequência de Projeto: Neste diagrama apresentamos a sequência de processos de um Projeto, onde o utilizador
-                                              pode criar, visualizar, e alterar dados. No caso da criação e alteração de projetos é feito um envio dos dados para a base de dados, e uma 
-                                              verificação. Se os dados estiverem corretos, o projeto é criado/alterado com sucesso, caso contrário é apresentada uma menagem de erro ao 
-                                              utilizador.
+                                          <p class="legenda">Neste Diagrama de Máquina de Estados podemos observar os estados gerais do Defect. Podemos observar que é criado um 
+                                            Defect quando os seus dados são preenchidos corretamente e sem ocorrência de erros. 
+                                            Após ter um Defect criado, podemos visualizar os seus dados, e caso necessário alterar os mesmos. 
+                                            Após a correta inserção e validação dos dados, o defect irá ser processado. Primeiramente entra num processo de Avaliação, em que um responsável 
+                                            atribuido por parte do gestor de projeto, irá decidir se o defect é escalado ou fechado. Ainda pode haver a possibilidade de o corrigir na fase de 
+                                            avaliação se for um defect de fácil resolução. Caso o Defect seja escalado entra no processo de Correção, onde mais uma vez, um responsável 
+                                            previamente selecionado irá resolver o problema. Caso seja resolvido (fixed), o defect fica terminado, caso dê origem a um novo erro, 
+                                            será criado um novo defect para a sua resolução. 
                                           </p>
                                     </div>
-
-
-                                    <div class="col-12">
-                                            <h2 class="headingd">Diagrama de Máquina de Estados</h2>
-                                            <div class="heading-underline"></div>
-                                    </div>
-
-                                    <div class="col-12">            
-                                            <!-- Ativar imagem modal -->
-                                            <img id="myImg6" src="img/maquinaestadosCASE.png" alt="State Machine Diagram" style="width:100%;max-width:1120px">
-
-                                            <!-- Classe Modal -->
-                                              <div id="myModal6" class="modal6">
-            
-                                            <!-- Botão de fecho -->
-                                           <span class="close6">&times;</span>
-            
-                                          <!-- Imagem dentro do modal -->
-                                          <img class="modal-content6" id="img06">
-            
-                                          <!-- Legenda da imagem -->
-                                         <div id="caption6"></div>
-                                          </div>
-                                          <div class="clik">
-                                                <p class="informative2">Clique na imagem para visualizar.</p>
-                                            </div>
-                                          <p class="legenda">Neste Diagrama de Máquina de Estados podemos observar os estados gerais da próxima fase a implementar. A sua análise é 
-                                              intuitiva onde podemos observar que um utilizador ao abrir a CASE Tool terá duas opções: Registo/Login. Ao realizar o login com sucesso
-                                              irá aceder a página inicial (Dashboard) da CASE onde existirá um Menu com a opção de Visualizar ou Criar Projeto. Na Visualização de Projeto,
-                                              será possível para Líderes de projeto aceder à Alteração do mesmo. A partir do Menu podemos sair do Software.
-                                          </p>
-                                    </div>
-
 
                                     <div class="col-12">
                                             <h2 class="headingd">Conclusões</h2>

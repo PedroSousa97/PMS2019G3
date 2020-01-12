@@ -1,0 +1,990 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+html, body {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: black; 
+}
+
+
+.offset:before{
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+/*------------ Navegação ----------*/
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    background: rgba(216, 197, 0, 0.8)!important;
+}
+
+.navbar-brand img{
+    height: 4rem;
+}
+
+.navbar-nav li{
+    padding-right: .9rem;
+
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:rgb(0,78,146);
+}
+
+.custom-toggler.navbar-toggler {
+    border-color:rgb(0,78,146);
+    border-width: .2rem;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,78,146, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*----------Página------------*/
+.jumbotron{
+    margin-bottom: 0;
+    padding: 10rem 6rem 25rem;
+    border-radius: 0;
+}
+
+h2.heading{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+h2.headingd{
+    padding-top: 5rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+
+.heading-underline{
+    width: 4rem;
+    height: .2rem;
+    background-color: rgb(0,78,146);
+    margin: 0 auto 2rem;
+}
+
+.feature h3{
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: .4rem;;
+}
+
+.feature p{
+    font-size: 1.1rem;
+}
+
+.intro{
+    text-align: justify;
+}
+.topicos2{
+    text-align: left;
+}
+.tarefas{
+    padding-top: 1rem ;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+/* Trigger do Modal */
+#myImg {
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* Modal (background) */
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    padding-top: 25rem; 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Imagem */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 600rem;
+  }
+  
+  /* Legenda */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 43.75rem;
+    text-align: center;
+    color: #ccc;
+    padding: 0.625rem 0;
+    height: 9.375rem;
+  }
+  
+  /* Zoom no Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* Close Button */
+  .close {
+    position: absolute;
+    top: 20rem;
+    right: 1rem;
+    color: #f1f1f1;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .clik{
+      display: none;
+  }
+
+  .informative2{
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  @media only screen and (min-width: 1400px){
+    .legenda{
+        padding-top: 2rem;
+    }
+  }
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1400px){
+    .clik{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+  }
+
+/* Trigger do Modal */
+#myImg2 {
+    padding-top: 2rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg2:hover {opacity: 0.7;}
+  
+  /* Modal (background) */
+  .modal2 {
+    display: none; 
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    padding-top: 25rem; 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Imagem */
+  .modal-content2 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 600rem;
+  }
+  
+  /* Legenda */
+  #caption2 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 43.75rem;
+    text-align: center;
+    color: #ccc;
+    padding: 0.625rem 0;
+    height: 9.375rem;
+  }
+  
+  /* Zoom no Modal */
+  .modal-content2, #caption2 {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* Close Button */
+  .close2 {
+    position: absolute;
+    top: 20rem;
+    right: 1rem;
+    color: #f1f1f1;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .informative2{
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content2 {
+      width: 100%;
+    }
+  }
+  
+/* Trigger do Modal */
+#myImg3 {
+    padding-top: 2rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg3:hover {opacity: 0.7;}
+  
+  /* Modal (background) */
+  .modal3 {
+    display: none; 
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    padding-top: 25rem; 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Imagem */
+  .modal-content3 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 600rem;
+  }
+  
+  /* Legenda */
+  #caption3 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 43.75rem;
+    text-align: center;
+    color: #ccc;
+    padding: 0.625rem 0;
+    height: 9.375rem;
+  }
+  
+  /* Zoom no Modal */
+  .modal-content3, #caption3 {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* Close Button */
+  .close3 {
+    position: absolute;
+    top: 20rem;
+    right: 1rem;
+    color: #f1f1f1;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close3:hover,
+  .close3:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .informative2{
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content3 {
+      width: 100%;
+    }
+  }
+
+
+  /* Trigger do Modal */
+#myImg4 {
+    padding-top: 2rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg4:hover {opacity: 0.7;}
+  
+  /* Modal (background) */
+  .modal4 {
+    display: none; 
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    padding-top: 25rem; 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Imagem */
+  .modal-content4 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 600rem;
+  }
+  
+  /* Legenda */
+  #caption4 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 43.75rem;
+    text-align: center;
+    color: #ccc;
+    padding: 0.625rem 0;
+    height: 9.375rem;
+  }
+  
+  /* Zoom no Modal */
+  .modal-content4, #caption4 {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* Close Button */
+  .close4 {
+    position: absolute;
+    top: 20rem;
+    right: 1rem;
+    color: #f1f1f1;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close4:hover,
+  .close4:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .informative2{
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content4 {
+      width: 100%;
+    }
+  }
+  
+
+  /* Trigger do Modal */
+#myImg6 {
+  padding-top: 2rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg6:hover {opacity: 0.7;}
+
+/* Modal (background) */
+.modal6 {
+  display: none; 
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  padding-top: 25rem; 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Imagem */
+.modal-content6 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600rem;
+}
+
+/* Legenda */
+#caption6 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 43.75rem;
+  text-align: center;
+  color: #ccc;
+  padding: 0.625rem 0;
+  height: 9.375rem;
+}
+
+/* Zoom no Modal */
+.modal-content6, #caption6 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* Close Button */
+.close6 {
+  position: absolute;
+  top: 20rem;
+  right: 1rem;
+  color: #f1f1f1;
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close6:hover,
+.close6:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.informative2{
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content6 {
+    width: 100%;
+  }
+}
+
+
+/* Trigger do Modal */
+#myImg5 {
+  padding-top: 2rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg5:hover {opacity: 0.7;}
+
+/* Modal (background) */
+.modal5 {
+  display: none; 
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  padding-top: 25rem; 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Imagem */
+.modal-content5 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600rem;
+}
+
+/* Legenda */
+#caption5 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 43.75rem;
+  text-align: center;
+  color: #ccc;
+  padding: 0.625rem 0;
+  height: 9.375rem;
+}
+
+/* Zoom no Modal */
+.modal-content5, #caption5 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* Close Button */
+.close5 {
+  position: absolute;
+  top: 20rem;
+  right: 1rem;
+  color: #f1f1f1;
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close5:hover,
+.close5:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.informative2{
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content5 {
+    width: 100%;
+  }
+}
+
+
+
+/* ---------------TABLE--------------------- */
+.portraitphoto{
+  display: none;
+}
+.portraittext{
+  display: none;
+}
+a {
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* ------------------------------------ */
+h1,h2,h3,h4,h5,h6 {margin: 0px;}
+
+p {margin: 0px;}
+
+
+
+
+/* ------------------------------------ */
+input {
+  display: block;
+	outline: none;
+	border: none !important;
+}
+
+textarea {
+  display: block;
+  outline: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+/* ------------------------------------ */
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Utiliti ]*/
+
+.orange{
+  background-color: orangered !important;
+  color: white;
+}
+.green{
+  background-color: green;
+  color: white;
+}
+.yellow{
+  background-color: yellow;
+}
+.blue{
+  background-color: rgb(109, 221, 255);
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-table100 {
+  width: 100%;
+  min-height: 100vh;
+  background:transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+}
+
+.wrap-table100 {
+  width: 1170px;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+  border: 1px solid black;
+}
+table td, table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: rgb(0, 34, 63);
+}
+table tbody tr {
+  height: 50px;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+
+.table100-head th{
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+  text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: black;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.column1 {
+  width: 260px;
+
+}
+
+.column2 {
+  width: 160px;
+}
+
+.column3 {
+  width: 245px;
+}
+
+.column4 {
+  width: 110px;
+  
+}
+
+.column5 {
+  width: 170px;
+  
+}
+
+.column6 {
+  width: 222px;
+}
+
+.column7 {
+  width: 110px;
+
+}
+
+.column8 {
+  width: 260px;
+}
+
+.column9 {
+  width: 245px;
+}
+
+.column10 {
+  width: 280px;
+  
+}
+
+
+@media screen and (max-width: 992px) {
+  table {
+    display: block;
+  }
+  table > *, table tr, table td, table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  table tbody tr td {
+    padding-left: 40% !important;
+    margin-bottom: 24px;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Tarefa";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Descrição";
+  }
+  table tbody tr td:nth-child(3):before {
+    content: "Complexidade";
+  }
+  table tbody tr td:nth-child(4):before {
+    content: "Relevância";
+  }
+  table tbody tr td:nth-child(5):before {
+    content: "Dependências";
+  }
+  table tbody tr td:nth-child(6):before {
+    content: "Estim. de Esforço";
+  }
+  table tbody tr td:nth-child(7):before {
+    content: "Estim. de Horas";
+  }
+  table tbody tr td:nth-child(8):before {
+    content: "Esforço Real";
+  }
+  table tbody tr td:nth-child(9):before {
+    content: "Horas Reais";
+  }
+  table tbody tr td:nth-child(10):before {
+    content: "Responsável";
+  }
+
+  .column4,
+  .column5,
+  .column6 {
+    text-align: left;
+  }
+
+  .column10,
+  .column9,
+  .column8,
+  .column7,
+  .column4,
+  .column5,
+  .column6,
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+  }
+
+  tbody tr {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container-table100 {
+    display: none;
+  }
+  .portraitphoto{
+    padding-top: 70%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .portraittext{
+    font-weight: bold;
+    padding-top: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.tabelafinal{
+    padding-top: 5rem;
+}
+/*------------Footer------------*/
+
+.page-footer{
+    background-color: rgba(216, 197, 0, 0.8);
+  }
+  
+  .footer-copyright{
+      color: white;
+  }
+  
+  .footref{
+    color: rgb(0,78,146);
+  }
